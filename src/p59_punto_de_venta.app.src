@@ -1,0 +1,8 @@
+{application, p59_punto_de_venta, [
+  {description, "Punto de venta"},
+  {vsn, "0.1.0"},
+  {registered, [p59_punto_de_venta_sup, p59_punto_de_venta_server]},
+  {mod, {p59_punto_de_venta_app, []}},
+  {applications, [kernel, stdlib, cowboy, recon]},
+  {env, []}
+]}.
