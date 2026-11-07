@@ -1,0 +1,112 @@
+# rebar3 eunit -v — 2026-11-05 15:16:00
+===> Verifying dependencies...
+===> Analyzing applications...
+===> Compiling p59_punto_de_venta
+===> Performing EUnit tests...
+======================== EUnit ========================
+file "p59_punto_de_venta.app"
+  application 'p59_punto_de_venta'
+    module 'p59_almacen'
+    module 'p59_caja'
+    module 'p59_cajas_sup'
+    module 'p59_caos'
+    module 'p59_catalogo'
+    module 'p59_cliente'
+    module 'p59_config'
+    module 'p59_corte'
+    module 'p59_dinero'
+    module 'p59_escenarios'
+    module 'p59_eventos'
+    module 'p59_h_cajas'
+    module 'p59_h_corte'
+    module 'p59_h_eventos'
+    module 'p59_h_metricas'
+    module 'p59_h_productos'
+    module 'p59_h_simulacion'
+    module 'p59_h_sistema'
+    module 'p59_h_tickets'
+    module 'p59_h_ventas'
+    module 'p59_http'
+      module 'p59_http_tests'
+        p59_http_tests:16: -api_test_/0-fun-5-...[0.139 s] ok
+        p59_http_tests:17: -api_test_/0-fun-4-...[0.006 s] ok
+        p59_http_tests:18: -api_test_/0-fun-3-...[0.058 s] ok
+        p59_http_tests:19: -api_test_/0-fun-2-...[0.014 s] ok
+        p59_http_tests:20: -api_test_/0-fun-1-...[0.021 s] ok
+        p59_http_tests:21: -api_test_/0-fun-0-...=SUPERVISOR REPORT==== 5-Nov-2026::15:16:01.833493 ===
+[0.073 s] ok
+        [done in 0.329 s]
+      [done in 0.431 s]
+    module 'p59_importes'
+    module 'p59_impresora'
+    module 'p59_inventario'
+    module 'p59_metricas'
+    module 'p59_movimientos'
+    module 'p59_punto_de_venta_app'
+    module 'p59_punto_de_venta_server'
+    module 'p59_punto_de_venta_sup'
+    module 'p59_servicios_sup'
+    module 'p59_simulacion'
+    module 'p59_sse_h'
+    module 'p59_sucursal_sup'
+    module 'p59_terminal_bancaria'
+    module 'p59_ticket'
+    module 'p59_tipo_cambio'
+    module 'p59_venta'
+    module 'p59_ventas_sup'
+    [done in 0.496 s]
+  [done in 0.497 s]
+module 'p59_calculo_tests'
+  p59_calculo_tests: iva_redondea_medio_centavo_hacia_arriba_test...ok
+  p59_calculo_tests: usd_a_mxn_redondea_a_piso_test...ok
+  p59_calculo_tests: acumulado_conserva_el_total_test...ok
+  p59_calculo_tests: formato_test...ok
+  p59_calculo_tests: linea_con_descuento_e_iva_test...ok
+  p59_calculo_tests: totales_suman_por_partida_test...ok
+  p59_calculo_tests: venta_vacia_no_se_cobra_test...ok
+  p59_calculo_tests: pago_mxn_con_cambio_test...ok
+  p59_calculo_tests: pago_usd_con_cambio_en_pesos_test...ok
+  p59_calculo_tests: pago_mixto_test...ok
+  p59_calculo_tests: invariante_pagos_menos_cambio_es_total_test...ok
+  p59_calculo_tests: pagos_invalidos_test...ok
+  p59_calculo_tests: catalogo_800_productos_deterministas_test...[0.005 s] ok
+  p59_calculo_tests: devoluciones_parciales_suman_el_total_test...ok
+  p59_calculo_tests: no_se_devuelve_mas_de_lo_vendido_test...ok
+  p59_calculo_tests: corte_cuadra_con_ventas_y_reembolsos_test...ok
+  p59_calculo_tests: corte_detecta_venta_que_no_cuadra_test...ok
+  p59_calculo_tests: corte_sumado_test...ok
+  [done in 0.059 s]
+module 'p59_punto_de_venta_tests'
+  p59_punto_de_venta_tests:9: -arbol_de_supervision_test_/0-fun-12-...ok
+  p59_punto_de_venta_tests:10: -arbol_de_supervision_test_/0-fun-10-...ok
+  p59_punto_de_venta_tests:11: -arbol_de_supervision_test_/0-fun-8-...[0.004 s] ok
+  p59_punto_de_venta_tests:12: -arbol_de_supervision_test_/0-fun-7-...ok
+  p59_punto_de_venta_tests:13: -arbol_de_supervision_test_/0-fun-6-...ok
+  p59_punto_de_venta_tests:14: -arbol_de_supervision_test_/0-fun-4-...ok
+  p59_punto_de_venta_tests:15: -arbol_de_supervision_test_/0-fun-2-...ok
+  p59_punto_de_venta_tests:16: -arbol_de_supervision_test_/0-fun-1-...[0.001 s] ok
+  [done in 0.029 s]
+module 'p59_test_util'
+module 'p59_ventas_tests'
+  p59_ventas_tests:11: -dominio_test_/0-fun-3-...[0.023 s] ok
+  p59_ventas_tests:12: -dominio_test_/0-fun-2-...[0.028 s] ok
+  p59_ventas_tests:13: -dominio_test_/0-fun-1-...[0.010 s] ok
+  p59_ventas_tests:14: -dominio_test_/0-fun-0-...[0.335 s] ok
+  p59_ventas_tests:62: -con_app/1-fun-0-...[0.038 s] ok
+  p59_ventas_tests:62: -con_app/1-fun-0-...[0.024 s] ok
+  p59_ventas_tests:62: -con_app/1-fun-0-...[0.010 s] ok
+  p59_ventas_tests:62: -con_app/1-fun-0-...[0.048 s] ok
+  p59_ventas_tests:62: -con_app/1-fun-0-...[0.049 s] ok
+  p59_ventas_tests:36: -escenarios_test_/0-fun-2-...[0.690 s] ok
+  p59_ventas_tests:36: -escenarios_test_/0-fun-2-...[0.045 s] ok
+  p59_ventas_tests:36: -escenarios_test_/0-fun-2-...[0.028 s] ok
+  p59_ventas_tests:36: -escenarios_test_/0-fun-2-...[0.026 s] ok
+  p59_ventas_tests:36: -escenarios_test_/0-fun-2-...[0.028 s] ok
+  p59_ventas_tests:42: -caos_test_/0-fun-1-...=SUPERVISOR REPORT==== 5-Nov-2026::15:16:03.517064 ===
+[0.163 s] ok
+  p59_ventas_tests:48: -simulacion_reducida_test_/0-fun-3-...=SUPERVISOR REPORT==== 5-Nov-2026::15:16:04.808800 ===
+[1.726 s] ok
+  p59_ventas_tests:58: -recuperacion_tras_apagon_test_/0-fun-0-...[0.074 s] ok
+  [done in 3.507 s]
+=======================================================
+  All 49 tests passed.

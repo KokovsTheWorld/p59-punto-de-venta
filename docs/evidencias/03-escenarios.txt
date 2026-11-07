@@ -1,0 +1,48 @@
+# scripts/escenarios.sh — 2026-11-05 15:16:15
+
+=== Escenario A: Terminal bancaria cae a mitad del cobro -> OK
+   [ok] A1: la venta queda en revisión, no pagada
+   [ok] A1: no hay movimiento en el libro mientras está en revisión
+   [ok] A1: la unidad queda apartada (reservada), no vendida
+   [ok] A1: el reintento confirma con el cargo ya hecho
+   [ok] A1: el banco registra el cargo de esa referencia (sin cobrar de nuevo)
+   [ok] A1: existencia descontada exactamente una vez
+   [ok] A2: sin respuesta → revisión
+   [ok] A2: el banco no registra el cargo → la venta vuelve a abierta
+   [ok] A2: se cobra en efectivo y se confirma
+
+=== Escenario B: Cancelación de un ticket del turno anterior -> OK
+   [ok] El corte del turno anterior no cambia
+   [ok] La cancelación se registra en el turno actual
+   [ok] Conserva referencia al turno original
+   [ok] El corte actual muestra la cancelación
+   [ok] Efectivo esperado = fondo - reembolso
+   [ok] Invariante contable del turno actual
+   [ok] Cancelar dos veces devuelve el mismo movimiento
+   [ok] El ticket conserva su historia (1 reembolso)
+   [ok] Las unidades regresan al inventario
+
+=== Escenario C: Reintento de red: la misma confirmación llega varias veces -> OK
+   [ok] La creación repetida devuelve la misma venta
+   [ok] Las 5 respuestas son exitosas
+   [ok] Todas devuelven el mismo folio
+   [ok] Una sola venta nueva en el libro
+   [ok] Inventario descontado una sola vez
+   [ok] Otra operacion_id sobre la venta pagada se rechaza
+
+=== Escenario D: Pago en dólares con cambio en pesos -> OK
+   [ok] Dólares valorados al tipo de cambio de la operación (piso)
+   [ok] Cambio entregado en pesos
+   [ok] El ticket registra el tipo de cambio usado
+   [ok] Un cambio posterior del tipo de cambio no altera el ticket
+   [ok] pagos(MXN) - cambio = total
+
+=== Escenario E: Corte de caja con ventas en proceso -> OK
+   [ok] La venta en proceso no se cuenta como vendida
+   [ok] El efectivo esperado no cambia por la venta en proceso
+   [ok] El corte la lista como 'en proceso'
+   [ok] Al pagarla, entra al corte
+   [ok] Invariante contable
+
+Resultado: OK
+Evidencia: logs/escenarios-20261105-151618.json

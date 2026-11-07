@@ -1,0 +1,348 @@
+{
+  "caja": 2,
+  "experimentos": [
+    {
+      "esperado": "La caja se reinicia sola, la venta sigue abierta con sus partidas y se puede cobrar; inventario y corte cuadran",
+      "estrategia": "one_for_one",
+      "ocurrido": [
+        {
+          "esperado": true,
+          "obtenido": true,
+          "ok": true,
+          "verificacion": "La caja fue reiniciada con otro pid"
+        },
+        {
+          "esperado": "<0.167.0>",
+          "obtenido": "<0.167.0>",
+          "ok": true,
+          "verificacion": "La venta sobrevivió (mismo pid; no estaba enlazada a la caja)"
+        },
+        {
+          "esperado": "V-000001",
+          "obtenido": "V-000001",
+          "ok": true,
+          "verificacion": "La caja recuperó su venta en curso desde disco"
+        },
+        {
+          "esperado": [
+            {
+              "cantidad": 2,
+              "descuento_pct": 0,
+              "nombre": "Manzana La Frontera mediano",
+              "precio_unitario": 30050,
+              "producto_id": "P0001",
+              "tasa_iva": 0
+            },
+            {
+              "cantidad": 1,
+              "descuento_pct": 0,
+              "nombre": "Suavizante Bajamar familiar",
+              "precio_unitario": 2000,
+              "producto_id": "P0002",
+              "tasa_iva": 1600
+            }
+          ],
+          "obtenido": [
+            {
+              "cantidad": 2,
+              "descuento_pct": 0,
+              "nombre": "Manzana La Frontera mediano",
+              "precio_unitario": 30050,
+              "producto_id": "P0001",
+              "tasa_iva": 0
+            },
+            {
+              "cantidad": 1,
+              "descuento_pct": 0,
+              "nombre": "Suavizante Bajamar familiar",
+              "precio_unitario": 2000,
+              "producto_id": "P0002",
+              "tasa_iva": 1600
+            }
+          ],
+          "ok": true,
+          "verificacion": "Las partidas no cambiaron"
+        },
+        {
+          "esperado": [
+            [1,"<0.150.0>"],
+            [3,"<0.152.0>"],
+            [4,"<0.153.0>"]
+          ],
+          "obtenido": [
+            [1,"<0.150.0>"],
+            [3,"<0.152.0>"],
+            [4,"<0.153.0>"]
+          ],
+          "ok": true,
+          "verificacion": "Las otras cajas no se reiniciaron (one_for_one)"
+        },
+        {
+          "esperado": "pagada",
+          "obtenido": "pagada",
+          "ok": true,
+          "verificacion": "La venta recuperada se cobra y confirma"
+        },
+        {
+          "esperado": true,
+          "obtenido": true,
+          "ok": true,
+          "verificacion": "Invariante de inventario (inicial - vendidas + devueltas, sin negativos)"
+        },
+        {
+          "esperado": true,
+          "obtenido": true,
+          "ok": true,
+          "verificacion": "Invariante contable del corte"
+        }
+      ],
+      "ok": true,
+      "pid_antes": "<0.151.0>",
+      "pid_despues": "<0.168.0>",
+      "por_que": "Simula un fallo de software en la caja con un cliente a medio cobro",
+      "proceso": "p59_caja_2",
+      "reinicios": {
+        "p59_almacen": 0,
+        "p59_caja_1": 0,
+        "p59_caja_2": 1,
+        "p59_caja_3": 0,
+        "p59_caja_4": 0,
+        "p59_cajas_sup": 0,
+        "p59_impresora": 0,
+        "p59_inventario": 0,
+        "p59_punto_de_venta_server": 0,
+        "p59_sucursal_sup": 0,
+        "p59_terminal_bancaria": 0,
+        "p59_tipo_cambio": 0,
+        "p59_ventas_sup": 0
+      },
+      "supervisor": "p59_cajas_sup",
+      "venta": "V-000001"
+    },
+    {
+      "esperado": "El supervisor la reinicia (transient) y la venta se reconstruye desde disco",
+      "estrategia": "simple_one_for_one",
+      "ocurrido": [
+        {
+          "esperado": true,
+          "obtenido": true,
+          "ok": true,
+          "verificacion": "El proceso de la venta fue reiniciado"
+        },
+        {
+          "esperado": [
+            {
+              "cantidad": 2,
+              "descuento_pct": 0,
+              "nombre": "Manzana La Frontera mediano",
+              "precio_unitario": 30050,
+              "producto_id": "P0001",
+              "tasa_iva": 0
+            },
+            {
+              "cantidad": 1,
+              "descuento_pct": 0,
+              "nombre": "Suavizante Bajamar familiar",
+              "precio_unitario": 2000,
+              "producto_id": "P0002",
+              "tasa_iva": 1600
+            }
+          ],
+          "obtenido": [
+            {
+              "cantidad": 2,
+              "descuento_pct": 0,
+              "nombre": "Manzana La Frontera mediano",
+              "precio_unitario": 30050,
+              "producto_id": "P0001",
+              "tasa_iva": 0
+            },
+            {
+              "cantidad": 1,
+              "descuento_pct": 0,
+              "nombre": "Suavizante Bajamar familiar",
+              "precio_unitario": 2000,
+              "producto_id": "P0002",
+              "tasa_iva": 1600
+            }
+          ],
+          "ok": true,
+          "verificacion": "Se reconstruyó desde DETS con las mismas partidas"
+        },
+        {
+          "esperado": "abierta",
+          "obtenido": "abierta",
+          "ok": true,
+          "verificacion": "Sigue abierta"
+        },
+        {
+          "esperado": "pagada",
+          "obtenido": "pagada",
+          "ok": true,
+          "verificacion": "La venta recuperada se cobra y confirma"
+        },
+        {
+          "esperado": true,
+          "obtenido": true,
+          "ok": true,
+          "verificacion": "Invariante de inventario (inicial - vendidas + devueltas, sin negativos)"
+        },
+        {
+          "esperado": true,
+          "obtenido": true,
+          "ok": true,
+          "verificacion": "Invariante contable del corte"
+        }
+      ],
+      "ok": true,
+      "pid_antes": "<0.169.0>",
+      "pid_despues": "<0.170.0>",
+      "por_que": "Simula la caída del proceso que lleva la venta",
+      "proceso": "p59_venta V-000002",
+      "reinicios": {
+        "p59_almacen": 0,
+        "p59_caja_1": 0,
+        "p59_caja_2": 1,
+        "p59_caja_3": 0,
+        "p59_caja_4": 0,
+        "p59_cajas_sup": 0,
+        "p59_impresora": 0,
+        "p59_inventario": 0,
+        "p59_punto_de_venta_server": 0,
+        "p59_sucursal_sup": 0,
+        "p59_terminal_bancaria": 0,
+        "p59_tipo_cambio": 0,
+        "p59_ventas_sup": 0
+      },
+      "supervisor": "p59_ventas_sup",
+      "venta": "V-000002"
+    },
+    {
+      "esperado": "Se reinicia el inventario y todo lo que depende de él; existencias recalculadas desde el libro; ninguna venta confirmada se pierde",
+      "estrategia": "rest_for_one",
+      "ocurrido": [
+        {
+          "esperado": true,
+          "obtenido": true,
+          "ok": true,
+          "verificacion": "Inventario reiniciado"
+        },
+        {
+          "esperado": true,
+          "obtenido": true,
+          "ok": true,
+          "verificacion": "La sucursal (cajas y ventas) se reinició después (rest_for_one)"
+        },
+        {
+          "esperado": [
+            "<0.118.0>",
+            "<0.123.0>"
+          ],
+          "obtenido": [
+            "<0.118.0>",
+            "<0.123.0>"
+          ],
+          "ok": true,
+          "verificacion": "Los servicios anteriores en el árbol no se tocaron"
+        },
+        {
+          "esperado": {
+            "cancelaciones": 0,
+            "devoluciones": 0,
+            "importe_vendido": 124840,
+            "ventas": 2
+          },
+          "obtenido": {
+            "cancelaciones": 0,
+            "devoluciones": 0,
+            "importe_vendido": 124840,
+            "ventas": 2
+          },
+          "ok": true,
+          "verificacion": "El libro se reconstruyó sin perder ventas"
+        },
+        {
+          "esperado": [
+            {
+              "cantidad": 2,
+              "descuento_pct": 0,
+              "nombre": "Manzana La Frontera mediano",
+              "precio_unitario": 30050,
+              "producto_id": "P0001",
+              "tasa_iva": 0
+            },
+            {
+              "cantidad": 1,
+              "descuento_pct": 0,
+              "nombre": "Suavizante Bajamar familiar",
+              "precio_unitario": 2000,
+              "producto_id": "P0002",
+              "tasa_iva": 1600
+            }
+          ],
+          "obtenido": [
+            {
+              "cantidad": 2,
+              "descuento_pct": 0,
+              "nombre": "Manzana La Frontera mediano",
+              "precio_unitario": 30050,
+              "producto_id": "P0001",
+              "tasa_iva": 0
+            },
+            {
+              "cantidad": 1,
+              "descuento_pct": 0,
+              "nombre": "Suavizante Bajamar familiar",
+              "precio_unitario": 2000,
+              "producto_id": "P0002",
+              "tasa_iva": 1600
+            }
+          ],
+          "ok": true,
+          "verificacion": "La venta abierta se reconstruyó con sus partidas"
+        },
+        {
+          "esperado": "pagada",
+          "obtenido": "pagada",
+          "ok": true,
+          "verificacion": "La venta recuperada se cobra y confirma"
+        },
+        {
+          "esperado": true,
+          "obtenido": true,
+          "ok": true,
+          "verificacion": "Invariante de inventario (inicial - vendidas + devueltas, sin negativos)"
+        },
+        {
+          "esperado": true,
+          "obtenido": true,
+          "ok": true,
+          "verificacion": "Invariante contable del corte"
+        }
+      ],
+      "ok": true,
+      "pid_antes": "<0.146.0>",
+      "pid_despues": "<0.172.0>",
+      "por_que": "Simula la caída del servicio central de inventario y libro",
+      "proceso": "p59_inventario",
+      "reinicios": {
+        "p59_almacen": 0,
+        "p59_caja_1": 1,
+        "p59_caja_2": 2,
+        "p59_caja_3": 1,
+        "p59_caja_4": 1,
+        "p59_cajas_sup": 1,
+        "p59_impresora": 0,
+        "p59_inventario": 1,
+        "p59_punto_de_venta_server": 0,
+        "p59_sucursal_sup": 1,
+        "p59_terminal_bancaria": 0,
+        "p59_tipo_cambio": 0,
+        "p59_ventas_sup": 1
+      },
+      "supervisor": "p59_punto_de_venta_sup",
+      "venta": "V-000003"
+    }
+  ],
+  "ok": true
+}

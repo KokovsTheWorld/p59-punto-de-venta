@@ -1,0 +1,490 @@
+{
+  "caos": {
+    "estrategia": "one_for_one",
+    "pid_antes": "<0.152.0>",
+    "pid_despues": "<0.573.0>",
+    "proceso": "p59_caja_3",
+    "reiniciada": true,
+    "supervisor": "p59_cajas_sup",
+    "tickets_confirmados_al_matar": 377,
+    "venta_en_curso_al_matar": "V-000378"
+  },
+  "consolidado_turno_2": {
+    "alcance": {
+      "caja": 10,
+      "cajero": "Diego (tarde)",
+      "turno": 8
+    },
+    "cancelaciones": {
+      "monto": 1257141,
+      "numero": 11
+    },
+    "cobros": {
+      "cambio_entregado": 514295,
+      "efectivo_mxn": 18795000,
+      "efectivo_usd": 295600,
+      "efectivo_usd_valor_mxn": 5379920,
+      "tarjeta": 13553906
+    },
+    "contado": null,
+    "descuadre": false,
+    "devoluciones": {
+      "monto": 324374,
+      "numero": 12
+    },
+    "diferencia": null,
+    "efectivo_esperado": {
+      "mxn": 17381557,
+      "usd": 295600
+    },
+    "venta_neta": 35633016,
+    "ventas": {
+      "numero": 300,
+      "por_modalidad": {
+        "efectivo_mxn": 133,
+        "efectivo_usd": 47,
+        "mixto": 35,
+        "tarjeta": 85
+      },
+      "total": 37214531
+    }
+  },
+  "cortes_turno_1": [
+    {
+      "alcance": {
+        "caja": 1,
+        "cajero": "Ana",
+        "turno": 1
+      },
+      "cancelaciones": {
+        "monto": 0,
+        "numero": 0
+      },
+      "cobros": {
+        "cambio_entregado": 111188,
+        "efectivo_mxn": 4842000,
+        "efectivo_usd": 94900,
+        "efectivo_usd_valor_mxn": 1727180,
+        "tarjeta": 3443792
+      },
+      "contado": {
+        "mxn": 4830812,
+        "usd": 94900
+      },
+      "descuadre": false,
+      "devoluciones": {
+        "monto": 0,
+        "numero": 0
+      },
+      "diferencia": {
+        "mxn": 0,
+        "usd": 0
+      },
+      "efectivo_esperado": {
+        "mxn": 4830812,
+        "usd": 94900
+      },
+      "invariante": {
+        "explicado_por_medios": 9901784,
+        "ok": true,
+        "venta_neta": 9901784,
+        "ventas_cuadran": true
+      },
+      "venta_neta": 9901784,
+      "ventas": {
+        "numero": 75,
+        "por_modalidad": {
+          "efectivo_mxn": 33,
+          "efectivo_usd": 11,
+          "mixto": 7,
+          "tarjeta": 24
+        },
+        "total": 9901784
+      }
+    },
+    {
+      "alcance": {
+        "caja": 2,
+        "cajero": "Beto",
+        "turno": 1
+      },
+      "cancelaciones": {
+        "monto": 0,
+        "numero": 0
+      },
+      "cobros": {
+        "cambio_entregado": 136301,
+        "efectivo_mxn": 6135000,
+        "efectivo_usd": 57900,
+        "efectivo_usd_valor_mxn": 1053780,
+        "tarjeta": 2674195
+      },
+      "contado": {
+        "mxn": 6098699,
+        "usd": 57900
+      },
+      "descuadre": false,
+      "devoluciones": {
+        "monto": 0,
+        "numero": 0
+      },
+      "diferencia": {
+        "mxn": 0,
+        "usd": 0
+      },
+      "efectivo_esperado": {
+        "mxn": 6098699,
+        "usd": 57900
+      },
+      "invariante": {
+        "explicado_por_medios": 9726674,
+        "ok": true,
+        "venta_neta": 9726674,
+        "ventas_cuadran": true
+      },
+      "venta_neta": 9726674,
+      "ventas": {
+        "numero": 75,
+        "por_modalidad": {
+          "efectivo_mxn": 37,
+          "efectivo_usd": 10,
+          "mixto": 12,
+          "tarjeta": 16
+        },
+        "total": 9726674
+      }
+    },
+    {
+      "alcance": {
+        "caja": 3,
+        "cajero": "Carla",
+        "turno": 1
+      },
+      "cancelaciones": {
+        "monto": 0,
+        "numero": 0
+      },
+      "cobros": {
+        "cambio_entregado": 125591,
+        "efectivo_mxn": 3457000,
+        "efectivo_usd": 98200,
+        "efectivo_usd_valor_mxn": 1787240,
+        "tarjeta": 2682549
+      },
+      "contado": {
+        "mxn": 3426409,
+        "usd": 98200
+      },
+      "descuadre": true,
+      "devoluciones": {
+        "monto": 0,
+        "numero": 0
+      },
+      "diferencia": {
+        "mxn": -5000,
+        "usd": 0
+      },
+      "efectivo_esperado": {
+        "mxn": 3431409,
+        "usd": 98200
+      },
+      "invariante": {
+        "explicado_por_medios": 7801198,
+        "ok": true,
+        "venta_neta": 7801198,
+        "ventas_cuadran": true
+      },
+      "venta_neta": 7801198,
+      "ventas": {
+        "numero": 75,
+        "por_modalidad": {
+          "efectivo_mxn": 32,
+          "efectivo_usd": 13,
+          "mixto": 8,
+          "tarjeta": 22
+        },
+        "total": 7801198
+      }
+    },
+    {
+      "alcance": {
+        "caja": 4,
+        "cajero": "Diego",
+        "turno": 1
+      },
+      "cancelaciones": {
+        "monto": 0,
+        "numero": 0
+      },
+      "cobros": {
+        "cambio_entregado": 135732,
+        "efectivo_mxn": 6121000,
+        "efectivo_usd": 75500,
+        "efectivo_usd_valor_mxn": 1374100,
+        "tarjeta": 2993674
+      },
+      "contado": {
+        "mxn": 6085268,
+        "usd": 75500
+      },
+      "descuadre": false,
+      "devoluciones": {
+        "monto": 0,
+        "numero": 0
+      },
+      "diferencia": {
+        "mxn": 0,
+        "usd": 0
+      },
+      "efectivo_esperado": {
+        "mxn": 6085268,
+        "usd": 75500
+      },
+      "invariante": {
+        "explicado_por_medios": 10353042,
+        "ok": true,
+        "venta_neta": 10353042,
+        "ventas_cuadran": true
+      },
+      "venta_neta": 10353042,
+      "ventas": {
+        "numero": 75,
+        "por_modalidad": {
+          "efectivo_mxn": 36,
+          "efectivo_usd": 10,
+          "mixto": 15,
+          "tarjeta": 14
+        },
+        "total": 10353042
+      }
+    }
+  ],
+  "cortes_turno_2": [
+    {
+      "alcance": {
+        "caja": 1,
+        "cajero": "Ana (tarde)",
+        "turno": 2
+      },
+      "cancelaciones": {
+        "monto": 405927,
+        "numero": 2
+      },
+      "cobros": {
+        "cambio_entregado": 103827,
+        "efectivo_mxn": 4113000,
+        "efectivo_usd": 46300,
+        "efectivo_usd_valor_mxn": 842660,
+        "tarjeta": 3682580
+      },
+      "contado": null,
+      "descuadre": false,
+      "devoluciones": {
+        "monto": 18676,
+        "numero": 2
+      },
+      "diferencia": null,
+      "efectivo_esperado": {
+        "mxn": 3684570,
+        "usd": 46300
+      },
+      "invariante": {
+        "explicado_por_medios": 8109810,
+        "ok": true,
+        "venta_neta": 8109810,
+        "ventas_cuadran": true
+      },
+      "venta_neta": 8109810,
+      "ventas": {
+        "numero": 75,
+        "por_modalidad": {
+          "efectivo_mxn": 30,
+          "efectivo_usd": 11,
+          "mixto": 12,
+          "tarjeta": 22
+        },
+        "total": 8534413
+      }
+    },
+    {
+      "alcance": {
+        "caja": 2,
+        "cajero": "Beto (tarde)",
+        "turno": 2
+      },
+      "cancelaciones": {
+        "monto": 312404,
+        "numero": 3
+      },
+      "cobros": {
+        "cambio_entregado": 143777,
+        "efectivo_mxn": 5030000,
+        "efectivo_usd": 67900,
+        "efectivo_usd_valor_mxn": 1235780,
+        "tarjeta": 3796548
+      },
+      "contado": null,
+      "descuadre": false,
+      "devoluciones": {
+        "monto": 160976,
+        "numero": 5
+      },
+      "diferencia": null,
+      "efectivo_esperado": {
+        "mxn": 4588617,
+        "usd": 67900
+      },
+      "invariante": {
+        "explicado_por_medios": 9445171,
+        "ok": true,
+        "venta_neta": 9445171,
+        "ventas_cuadran": true
+      },
+      "venta_neta": 9445171,
+      "ventas": {
+        "numero": 75,
+        "por_modalidad": {
+          "efectivo_mxn": 34,
+          "efectivo_usd": 10,
+          "mixto": 9,
+          "tarjeta": 22
+        },
+        "total": 9918551
+      }
+    },
+    {
+      "alcance": {
+        "caja": 3,
+        "cajero": "Carla (tarde)",
+        "turno": 2
+      },
+      "cancelaciones": {
+        "monto": 419996,
+        "numero": 3
+      },
+      "cobros": {
+        "cambio_entregado": 145031,
+        "efectivo_mxn": 6007000,
+        "efectivo_usd": 63800,
+        "efectivo_usd_valor_mxn": 1161160,
+        "tarjeta": 2754587
+      },
+      "contado": null,
+      "descuadre": false,
+      "devoluciones": {
+        "monto": 64508,
+        "numero": 3
+      },
+      "diferencia": null,
+      "efectivo_esperado": {
+        "mxn": 5616865,
+        "usd": 63800
+      },
+      "invariante": {
+        "explicado_por_medios": 9293212,
+        "ok": true,
+        "venta_neta": 9293212,
+        "ventas_cuadran": true
+      },
+      "venta_neta": 9293212,
+      "ventas": {
+        "numero": 75,
+        "por_modalidad": {
+          "efectivo_mxn": 40,
+          "efectivo_usd": 10,
+          "mixto": 9,
+          "tarjeta": 16
+        },
+        "total": 9777716
+      }
+    },
+    {
+      "alcance": {
+        "caja": 4,
+        "cajero": "Diego (tarde)",
+        "turno": 2
+      },
+      "cancelaciones": {
+        "monto": 118814,
+        "numero": 3
+      },
+      "cobros": {
+        "cambio_entregado": 121660,
+        "efectivo_mxn": 3645000,
+        "efectivo_usd": 117600,
+        "efectivo_usd_valor_mxn": 2140320,
+        "tarjeta": 3320191
+      },
+      "contado": null,
+      "descuadre": false,
+      "devoluciones": {
+        "monto": 80214,
+        "numero": 2
+      },
+      "diferencia": null,
+      "efectivo_esperado": {
+        "mxn": 3491505,
+        "usd": 117600
+      },
+      "invariante": {
+        "explicado_por_medios": 8784823,
+        "ok": true,
+        "venta_neta": 8784823,
+        "ventas_cuadran": true
+      },
+      "venta_neta": 8784823,
+      "ventas": {
+        "numero": 75,
+        "por_modalidad": {
+          "efectivo_mxn": 29,
+          "efectivo_usd": 16,
+          "mixto": 5,
+          "tarjeta": 25
+        },
+        "total": 8983851
+      }
+    }
+  ],
+  "duracion_ms": 9702,
+  "invariantes": {
+    "cortes_cuadran": true,
+    "descuadres_detectados": [
+      {
+        "caja": 3,
+        "cajero": "Carla",
+        "turno": 1
+      }
+    ],
+    "folios_unicos": true,
+    "inventario": {
+      "minima_existencia": 0,
+      "ok": true,
+      "productos": 800,
+      "productos_con_error": [],
+      "unidades_actuales": 23819,
+      "unidades_iniciales": 26711,
+      "unidades_reservadas": 0
+    },
+    "ok": true,
+    "una_venta_por_ticket": true
+  },
+  "meta_tickets": 600,
+  "ok": true,
+  "operaciones": {
+    "cancelaciones_turno_anterior": 11,
+    "devoluciones": 12,
+    "efectivo_mxn": 271,
+    "efectivo_usd": 91,
+    "enviadas_a_revision": 2,
+    "mixto": 77,
+    "partidas_sin_existencia": 37,
+    "reintentos_duplicados_enviados": 29,
+    "revisiones_resueltas_sin_cargo": 2,
+    "tarjeta": 161,
+    "tarjetas_rechazadas": 12,
+    "tickets": 600,
+    "ventas_abandonadas": 2
+  },
+  "tickets_confirmados": 600,
+  "tickets_por_segundo": 61
+}

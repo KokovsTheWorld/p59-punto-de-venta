@@ -1,0 +1,28 @@
+# Release — 2026-11-05 15:16:42 — Linux 6.18.54.1-microsoft-standard-WSL2 — PRETTY_NAME="Ubuntu 26.04.1 LTS"
+$ rebar3 release
+===> Assembling release p59_punto_de_venta-0.2.0...
+===> Release successfully assembled: _build/default/rel/p59_punto_de_venta
+$ bin/p59_punto_de_venta daemon && bin/p59_punto_de_venta ping
+pong
+$ curl localhost:8059/api/health
+{"ping":"pong","estado":"ok","servicio":"p59_punto_de_venta"}
+$ curl localhost:8059/api/productos?limite=1
+{"total":800,"categorias":["Abarrotes","Frutas y verduras","Bebidas","Botanas y dulces","Limpieza","Cuidado personal","Papelería","Ferretería ligera"],"productos":[{"id":"P0001","nombre":"Manzana La Frontera mediano","activo":true,"categoria":"Frutas y verduras","existencia_inicial":42,"precio":30050,"tipo_iva":"tasa_cero","reservado":0,"existencia":42,"disponible":42}],"limite":1,"pagina":1}
+$ curl localhost:8059/api/cajas/1
+{"id":1,"venta_actual":null,"proceso":{"pid":"<0.557.0>","reinicios":0,"vivo":true},"turno":{"caja":1,"estado":"abierto","turno":1,"cajero":"Ana","fondo_mxn":100000,"abierto_en":1793920604905,"cerrado_en":null},"recientes":[]}
+$ curl localhost:8059/api/corte?caja=1
+{"ventas":{"total":0,"numero":0,"por_modalidad":{"efectivo_mxn":0,"efectivo_usd":0,"tarjeta":0,"mixto":0}},"invariante":{"ok":true,"explicado_por_medios":0,"venta_neta":0,"ventas_cuadran":true},"cancelaciones":{"monto":0,"numero":0},"devoluciones":{"monto":0,"numero":0},"en_proceso":[],"venta_neta":0,"cobros":{"efectivo_mxn":0,"efectivo_usd":0,"tarjeta":0,"cambio_entregado":0,"efectivo_usd_valor_m
+$ curl -X POST /api/ventas {"caja":2}
+V-000001
+partidas HTTP 200
+pago: pagada T-000001 AUT000516
+$ curl /metrics (extracto)
+p59_ventas_confirmadas_total 1
+p59_cajas_activas 4
+p59_productos 800
+p59_http_solicitudes_total{ruta="cajas"} 1
+p59_http_solicitudes_total{ruta="corte"} 1
+p59_http_solicitudes_total{ruta="health"} 1
+p59_http_solicitudes_total{ruta="productos"} 1
+p59_http_solicitudes_total{ruta="ventas"} 4
+$ bin/p59_punto_de_venta stop

@@ -1,8 +1,12 @@
 {application, p59_punto_de_venta, [
-  {description, "Punto de venta"},
-  {vsn, "0.1.0"},
-  {registered, [p59_punto_de_venta_sup, p59_punto_de_venta_server]},
+  {description, "Punto de venta: cajas concurrentes, inventario compartido, tickets y corte de caja"},
+  {vsn, "0.2.0"},
+  {registered, [p59_punto_de_venta_sup, p59_punto_de_venta_server, p59_servicios_sup,
+                p59_almacen, p59_inventario, p59_sucursal_sup, p59_ventas_sup, p59_cajas_sup,
+                p59_metricas, p59_eventos, p59_tipo_cambio, p59_terminal_bancaria,
+                p59_impresora, p59_caja_1, p59_caja_2, p59_caja_3, p59_caja_4]},
   {mod, {p59_punto_de_venta_app, []}},
   {applications, [kernel, stdlib, cowboy, recon]},
-  {env, []}
+  {env, []},
+  {licenses, ["MIT"]}
 ]}.

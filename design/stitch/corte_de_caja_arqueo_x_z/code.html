@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-container": "#d6e0f3", "tertiary": "#713b00", "surface-container-highest": "#dce2f3", "on-secondary-container": "#596373", "inverse-primary": "#83d7b1", "error-container": "#ffdad6", "secondary": "#555f6f", "on-tertiary": "#ffffff", "inverse-on-surface": "#ebf1ff", "on-primary": "#ffffff", "on-tertiary-fixed": "#2f1500", "on-primary-fixed-variant": "#005139", "surface-bright": "#f9f9ff", "tertiary-container": "#944f00", "primary-container": "#0b6e4f", "on-primary-fixed": "#002115", "surface-container": "#e7eefe", "primary-fixed": "#9ff4cc", "primary": "#00543b", "on-tertiary-container": "#ffd4b5", "on-surface-variant": "#3f4943", "outline-variant": "bec9c1", "on-tertiary-fixed-variant": "#6e3900", "on-error-container": "#93000a", "surface-dim": "#d3daea", "surface-tint": "#056c4d", "secondary-fixed-dim": "#bdc7d9", "background": "#f9f9ff", "primary-fixed-dim": "#83d7b1", "on-secondary-fixed-variant": "#3d4756", "on-primary-container": "#98edc6", "on-error": "#ffffff", "tertiary-fixed-dim": "#ffb77d", "on-surface": "#151c27", "tertiary-fixed": "#ffdcc3", "surface-variant": "#dce2f3", "on-background": "#151c27", "surface": "#f9f9ff", "error": "#ba1a1a", "on-secondary-fixed": "#121c2a", "on-secondary": "#ffffff", "surface-container-high": "#e2e8f8", "inverse-surface": "#2a313d", "secondary-fixed": "#d9e3f6", "surface-container-lowest": "#ffffff", "surface-container-low": "#f0f3ff", "outline": "#6f7a73" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xl": "2.5rem", "margin-desktop": "2rem", "gutter": "1rem", "space-lg": "1.5rem", "margin": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-md": "1rem" }, "fontFamily": { "label-numeric-sm": [ "JetBrains Mono" ], "headline-md": [ "Inter" ], "body-sm": [ "Inter" ], "body-md": [ "Inter" ], "label-receipt": [ "JetBrains Mono" ], "body-lg": [ "Inter" ], "headline-xl": [ "Inter" ], "headline-lg-mobile": [ "Inter" ], "headline-lg": [ "Inter" ], "label-numeric-md": [ "JetBrains Mono" ], "headline-xl-mobile": [ "Inter" ], "label-numeric-lg": [ "JetBrains Mono" ] }, "fontSize": { "label-numeric-sm": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0", "fontWeight": "500" } ], "headline-md": [ "1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-sm": [ "0.875rem", { "lineHeight": "1.25rem", "fontWeight": "400" } ], "body-md": [ "1rem", { "lineHeight": "1.5rem", "fontWeight": "400" } ], "label-receipt": [ "0.75rem", { "lineHeight": "1.125rem", "letterSpacing": "0.02em", "fontWeight": "400" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.625rem", "fontWeight": "400" } ], "headline-xl": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "700" } ], "headline-lg-mobile": [ "1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-lg": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-numeric-md": [ "1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "500" } ], "headline-xl-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-numeric-lg": [ "1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">point_of_sale</span></div><div class="flex flex-col"><span class="font-headline-md text-body-sm font-semibold tracking-tight text-on-surface">Frontera POS #59</span><span class="font-label-receipt text-label-receipt text-secondary uppercase">Tijuana, B.C. · OTP</span></div></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-xs py-1 rounded-DEFAULT"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-body-sm text-body-sm font-medium text-primary">En vivo</span></div><div class="hidden xl:flex items-center bg-surface-container-low px-space-sm py-1 rounded-DEFAULT"><span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant font-medium">T.C. USD/MXN: <span class="font-semibold text-primary">18.2000</span></span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="tablero" href="#">Tablero</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="cobrar" href="#">Cobrar</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="detalle-de-caja" href="#">Detalle de caja</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="detalle-de-venta" href="#">Detalle de venta</a><a aria-current="page" class="px-space-sm py-2 transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="corte-de-caja" href="#">Corte de caja</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="bitacora" href="#">Bitácora</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="simulacion" href="#">Simulación</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden 2xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-DEFAULT"><span class="material-symbols-outlined text-[16px] text-secondary">memory</span><span class="font-label-numeric-sm text-label-numeric-sm text-on-secondary-container">beam@tj-pos59 [800 SKUs]</span></div><button class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Conmutar tema" type="button"><span class="material-symbols-outlined text-[18px]">contrast</span></button><div class="flex items-center gap-space-xs pl-space-xs"><div class="text-right hidden sm:flex flex-col"><span class="font-body-sm text-body-sm font-medium text-on-surface">Cajero: M. Reyes</span><span class="font-label-receipt text-label-receipt text-secondary">Turno Matutino</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)] px-gutter-desktop py-space-md"><div class="flex flex-col w-full">
+<div class="w-full bg-surface-container-low px-gutter-desktop py-space-md shadow-sm mb-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-xs text-secondary font-label-receipt text-label-receipt uppercase">
+<span class="bg-surface-container-highest text-on-surface-variant px-2 py-0.5 rounded-DEFAULT font-medium">Terminal #01</span>
+<span>·</span>
+<span>Sucursal Tijuana Centro #59</span>
+<span>·</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface">BEAM Node: beam@tj-pos59</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Arqueo y Cierre de Caja</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-secondary bg-surface-container px-2 py-0.5 rounded-DEFAULT">Audit ID: CR-20231024-Z01</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>Turno Matutino: <strong>07:00 — 15:00</strong></span>
+</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">badge</span>
+<span>Cajero Titular: <strong>M. Reyes (ID #883)</strong></span>
+</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span>
+<span>Supervisor: <strong>L. Mendoza</strong></span>
+</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm shrink-0">
+<div class="bg-surface-container p-1 rounded-lg flex items-center shadow-inner">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-DEFAULT font-body-sm text-body-sm font-medium transition-all text-on-surface-variant hover:text-on-surface" id="btnCorteX" onclick="selectCorte('X')" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>Corte Parcial X (Informativo)</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-DEFAULT font-body-sm text-body-sm font-semibold transition-all bg-primary-container text-on-primary" id="btnCorteZ" onclick="selectCorte('Z')" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Corte Final Z (Cierre de Turno)</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-highest px-space-sm py-2 rounded-lg">
+<span class="material-symbols-outlined text-primary text-[20px]">currency_exchange</span>
+<div class="flex flex-col">
+<span class="font-label-receipt text-label-receipt uppercase text-secondary">T.C. Liquidación</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface font-semibold">18.2000 MXN</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mb-space-md p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between gap-space-md shadow-sm" id="bannerCorte">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-DEFAULT bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface" id="lblTipoCorte">Modo: Corte Final Z (Definitivo)</span>
+<span class="font-label-receipt text-label-receipt text-secondary">El corte Z acumulará los contadores fiscales, bloqueará la apertura de gaveta para el turno y emitirá el reporte auditado a la memoria no volátil OTP.</span>
+</div>
+</div>
+<div class="hidden sm:flex items-center gap-space-xs bg-surface px-space-sm py-1 rounded-DEFAULT shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-receipt text-label-receipt font-semibold text-primary uppercase">Cierre Fiscal Autorizado</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md mb-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 text-surface-container opacity-40 pointer-events-none">
+<span class="material-symbols-outlined text-[130px]">payments</span>
+</div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-primary-container text-on-primary font-label-receipt text-label-receipt font-semibold">MXN</span>
+<span class="font-headline-md text-body-md font-semibold text-on-surface">Efectivo Moneda Nacional</span>
+</div>
+<span class="flex items-center gap-1 font-label-receipt text-label-receipt text-primary font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Cuadrada
+          </span>
+</div>
+<span class="font-label-receipt text-label-receipt text-secondary block mb-space-sm">Arqueo físico vs. cálculo en libros</span>
+</div>
+<div class="space-y-space-xs mb-space-md">
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fondo Inicial de Apertura:</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface">$2,000.00</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ventas Brutas en Efectivo:</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface font-semibold">$14,350.00</span>
+</div>
+<div class="flex justify-between items-center py-1 bg-surface-container-low px-space-xs rounded-DEFAULT">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">move_to_inbox</span>
+<span class="font-body-sm text-body-sm text-tertiary">Retiro a tómbola (Seguridad):</span>
+</div>
+<span class="font-label-numeric-sm text-label-numeric-sm text-tertiary font-semibold">-$1,000.00</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pagos Mixtos (Porción MXN):</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface">$2,840.50</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg space-y-space-xs">
+<div class="flex justify-between items-baseline">
+<span class="font-label-receipt text-label-receipt uppercase text-secondary">Sistema Esperado MXN</span>
+<span class="font-label-numeric-md text-label-numeric-md font-semibold text-on-surface">$18,190.50</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-label-receipt text-label-receipt uppercase text-secondary">Físico Contado MXN</span>
+<span class="font-label-numeric-md text-label-numeric-md font-semibold text-primary">$18,190.50</span>
+</div>
+<div class="flex justify-between items-center pt-space-xs bg-surface-container px-space-xs rounded-DEFAULT">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Diferencia:</span>
+<div class="flex items-center gap-space-xs text-primary font-label-numeric-md text-label-numeric-md font-semibold">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>$0.00 MXN</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 text-surface-container opacity-40 pointer-events-none">
+<span class="material-symbols-outlined text-[130px]">attach_money</span>
+</div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-label-receipt text-label-receipt font-semibold">USD</span>
+<span class="font-headline-md text-body-md font-semibold text-on-surface">Dólares Americanos (Cash)</span>
+</div>
+<span class="flex items-center gap-1 font-label-receipt text-label-receipt text-primary font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Cuadrada
+          </span>
+</div>
+<span class="font-label-receipt text-label-receipt text-secondary block mb-space-sm">Divisa transfronteriza y paridad</span>
+</div>
+<div class="space-y-space-xs mb-space-md">
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fondo Inicial en Dólares:</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface">US$100.00</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ventas Efectivo USD:</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface font-semibold">US$480.00</span>
+</div>
+<div class="flex justify-between items-center py-1 bg-surface-container-low px-space-xs rounded-DEFAULT">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Equivalencia Turno (@ 18.20):</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-secondary font-medium">$8,736.00 MXN</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Retiros en Dólares:</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface">US$0.00</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg space-y-space-xs">
+<div class="flex justify-between items-baseline">
+<span class="font-label-receipt text-label-receipt uppercase text-secondary">Sistema Esperado USD</span>
+<span class="font-label-numeric-md text-label-numeric-md font-semibold text-on-surface">US$580.00</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-label-receipt text-label-receipt uppercase text-secondary">Físico Contado USD</span>
+<span class="font-label-numeric-md text-label-numeric-md font-semibold text-primary">US$580.00</span>
+</div>
+<div class="flex justify-between items-center pt-space-xs bg-surface-container px-space-xs rounded-DEFAULT">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Diferencia USD:</span>
+<div class="flex items-center gap-space-xs text-primary font-label-numeric-md text-label-numeric-md font-semibold">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>US$0.00</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 text-surface-container opacity-40 pointer-events-none">
+<span class="material-symbols-outlined text-[130px]">contactless</span>
+</div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-highest text-on-surface-variant font-label-receipt text-label-receipt font-semibold">PINPAD</span>
+<span class="font-headline-md text-body-md font-semibold text-on-surface">Tarjetas Bancarias</span>
+</div>
+<span class="flex items-center gap-1 font-label-receipt text-label-receipt text-primary font-semibold">
+<span class="material-symbols-outlined text-[14px]">done_all</span> Operando
+          </span>
+</div>
+<span class="font-label-receipt text-label-receipt text-secondary block mb-space-sm">Lote Terminal PAX A920 / Ingenico</span>
+</div>
+<div class="space-y-space-xs mb-space-md">
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lote Bancario Activo:</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface font-semibold">#0482</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Transacciones Aprobadas:</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface font-semibold">46 ops</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Transacciones Rechazadas:</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-secondary">0 ops</span>
+</div>
+<div class="flex justify-between items-center py-1 bg-surface-container-low px-space-xs rounded-DEFAULT">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Comprobante de Cierre:</span>
+<span class="font-label-receipt text-label-receipt text-primary font-medium">HOST AUTH #892911</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg space-y-space-xs">
+<div class="flex justify-between items-baseline">
+<span class="font-label-receipt text-label-receipt uppercase text-secondary">Monto Lote Terminal</span>
+<span class="font-label-numeric-md text-label-numeric-md font-semibold text-on-surface">$9,650.00 MXN</span>
+</div>
+<div class="flex justify-between items-center pt-space-xs bg-surface-container px-space-xs rounded-DEFAULT">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Transmisión Switch:</span>
+<div class="flex items-center gap-1 text-primary font-label-receipt text-label-receipt font-semibold uppercase">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>Transmitido con éxito</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md mb-space-md">
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-sm mb-space-md gap-space-xs bg-surface-container-low -mx-space-md -mt-space-md p-space-md rounded-t-xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">account_balance_wallet</span>
+<div>
+<span class="font-headline-md text-headline-md text-on-surface">Resumen General Consolidado de Ventas</span>
+<span class="block font-label-receipt text-label-receipt text-secondary">Integración bimonetaria de operaciones netas del turno</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-receipt text-label-receipt text-secondary uppercase block">Gran Total Turno</span>
+<span class="font-label-numeric-lg text-label-numeric-lg font-bold text-primary">$35,246.50 MXN</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md mb-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-receipt text-label-receipt text-secondary uppercase">Efectivo MXN Neto</span>
+<span class="font-label-numeric-md text-label-numeric-md font-semibold text-on-surface mt-1">$16,860.50</span>
+<span class="font-label-receipt text-label-receipt text-on-surface-variant mt-0.5">Ventas directas + Mixto</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-receipt text-label-receipt text-secondary uppercase">Efectivo USD (Valor MXN)</span>
+<span class="font-label-numeric-md text-label-numeric-md font-semibold text-on-surface mt-1">$8,736.00</span>
+<span class="font-label-receipt text-label-receipt text-on-surface-variant mt-0.5">US$480.00 × 18.2000</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-receipt text-label-receipt text-secondary uppercase">Terminales Bancarias</span>
+<span class="font-label-numeric-md text-label-numeric-md font-semibold text-on-surface mt-1">$9,650.00</span>
+<span class="font-label-receipt text-label-receipt text-on-surface-variant mt-0.5">46 transacciones batch</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center justify-between mb-space-xs font-label-receipt text-label-receipt text-secondary uppercase">
+<span>Distribución de Medios de Pago</span>
+<span>Participación Porcentual</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container flex overflow-hidden mb-space-xs">
+<div class="bg-primary h-full" style="width: 47.8%" title="Efectivo MXN (47.8%)"></div>
+<div class="bg-primary-fixed-variant h-full" style="width: 24.8%" title="Efectivo USD (24.8%)"></div>
+<div class="bg-secondary h-full" style="width: 27.4%" title="Tarjetas (27.4%)"></div>
+</div>
+<div class="flex flex-wrap items-center gap-space-md font-label-receipt text-label-receipt text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-primary"></span> Efectivo MXN: 47.8%</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-primary-fixed-variant"></span> Efectivo USD: 24.8%</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> Pinpad / Bancario: 27.4%</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">monitor_heart</span>
+<span class="font-headline-md text-body-md font-semibold text-on-surface">Bitácora Técnica y Resiliencia OTP</span>
+</div>
+<span class="font-label-receipt text-label-receipt bg-surface-container-low px-2 py-0.5 rounded-DEFAULT text-secondary">Supervision Tree: #pos_tree_sup</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm mb-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-DEFAULT bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">0 caídas no recuperadas</span>
+<span class="font-label-receipt text-label-receipt text-secondary">Disponibilidad del núcleo POS: 100.00% durante el turno.</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-DEFAULT bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">autorenew</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">1 reinicio transparente OTP</span>
+<span class="font-label-receipt text-label-receipt text-secondary">Worker &lt;0.412.0&gt; (pinpad_driver) reconectado vía gen_server sin pérdida de estado.</span>
+</div>
+</div>
+</div>
+<div class="p-space-xs bg-surface-container rounded-DEFAULT font-label-receipt text-label-receipt text-on-surface-variant flex items-center justify-between">
+<span class="flex items-center gap-1 font-label-numeric-sm text-label-numeric-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">terminal</span>
+<span>OTP 26.1 / Elixir Node: tj-pos59@192.168.10.59</span>
+</span>
+<span class="text-secondary font-label-numeric-sm text-label-numeric-sm">Process restarts: 1/5 (60s limit OK)</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col items-center">
+<div class="w-full flex items-center justify-between pb-space-xs mb-space-xs">
+<span class="font-label-receipt text-label-receipt uppercase text-secondary font-semibold">Previsualización Térmica (80mm)</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">receipt_long</span>
+</div>
+<div class="w-full max-w-[384px] bg-surface-container-low p-space-md rounded-DEFAULT shadow-inner font-label-receipt text-label-receipt text-on-surface flex flex-col gap-space-xs leading-tight">
+<div class="text-center font-bold pb-space-xs">
+<p>*****************************************</p>
+<p class="font-body-sm text-body-sm">COMPROBANTE INTERNO — NO ES CFDI</p>
+<p class="text-secondary font-medium">REPORTE AUDITADO DE ARQUEO FISCAL</p>
+<p>*****************************************</p>
+</div>
+<div class="space-y-0.5 text-on-surface-variant">
+<p>SUCURSAL: TIJUANA CENTRO #59</p>
+<p>CAJA: 01 · SERIAL: POS59-TJ-MX</p>
+<p>FECHA: 2023-10-24 15:02:18 PST</p>
+<p>TIPO: CORTE Z (FINAL DE TURNO)</p>
+<p>CAJERO: M. REYES [ID 883]</p>
+<p>SUPERVISOR: L. MENDOZA</p>
+<p>T.C. OPERACIÓN: 18.2000 MXN/USD</p>
+</div>
+<div class="py-1 text-center text-secondary">
+            -----------------------------------------
+          </div>
+<div class="space-y-0.5">
+<div class="flex justify-between">
+<span>FONDO APERTURA MXN:</span>
+<span class="font-bold">$2,000.00</span>
+</div>
+<div class="flex justify-between">
+<span>FONDO APERTURA USD:</span>
+<span class="font-bold">US$100.00</span>
+</div>
+<div class="flex justify-between">
+<span>VENTAS EFECTIVO MXN:</span>
+<span class="font-bold">$14,350.00</span>
+</div>
+<div class="flex justify-between">
+<span>VENTAS EFECTIVO USD:</span>
+<span class="font-bold">US$480.00</span>
+</div>
+<div class="flex justify-between">
+<span>RETIRO TÓMBOLA SEG.:</span>
+<span class="font-bold">-$1,000.00</span>
+</div>
+<div class="flex justify-between">
+<span>PAGOS MIXTOS (MXN):</span>
+<span class="font-bold">$2,840.50</span>
+</div>
+<div class="flex justify-between">
+<span>LOTE BANCARIO #0482:</span>
+<span class="font-bold">$9,650.00</span>
+</div>
+</div>
+<div class="py-1 text-center text-secondary">
+            =========================================
+          </div>
+<div class="space-y-1">
+<div class="flex justify-between font-bold text-on-surface">
+<span>TOTAL MXN CAJA:</span>
+<span>$18,190.50</span>
+</div>
+<div class="flex justify-between font-bold text-on-surface">
+<span>TOTAL USD CAJA:</span>
+<span>US$580.00</span>
+</div>
+<div class="flex justify-between font-bold text-primary">
+<span>GRAN TOTAL VENTA:</span>
+<span>$35,246.50 MXN</span>
+</div>
+<div class="flex justify-between text-primary font-bold">
+<span>ESTADO CUADRATURA:</span>
+<span>100% CUADRADA ($0.00)</span>
+</div>
+</div>
+<div class="pt-2 text-center text-secondary">
+<p>OTP RUNTIME ID: tj-pos59-883-Z01</p>
+<p>MEMORIA FISCAL LOCAL GUARDADA</p>
+<p class="font-semibold text-on-surface mt-1">[FIN DEL TICKET]</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">draw</span>
+<span class="font-headline-md text-body-md font-semibold text-on-surface">Validación de Firmas</span>
+</div>
+<div class="space-y-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<span class="font-label-receipt text-label-receipt text-secondary uppercase">Cajero Saliente</span>
+<span class="flex items-center gap-1 text-primary font-label-receipt text-label-receipt font-semibold">
+<span class="material-symbols-outlined text-[14px]">check</span> Firmado PIN
+              </span>
+</div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">M. Reyes</span>
+<span class="font-label-receipt text-label-receipt text-on-surface-variant font-label-numeric-sm">PIN Criptográfico: #***-883</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<span class="font-label-receipt text-label-receipt text-secondary uppercase">Supervisor en Turno</span>
+<span class="flex items-center gap-1 text-primary font-label-receipt text-label-receipt font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span> Clave Autorizada
+              </span>
+</div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">L. Mendoza</span>
+<span class="font-label-receipt text-label-receipt text-on-surface-variant font-label-numeric-sm">Credencial OTP: SUP-TJ059-OK</span>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary py-space-md px-space-md rounded-lg font-headline-md text-body-md font-semibold flex items-center justify-center gap-space-sm shadow-md transition-all active:scale-[0.99]" id="btnGenerarCorte" onclick="ejecutarCorte()" type="button">
+<span class="material-symbols-outlined text-[24px]">print</span>
+<span>GENERAR CORTE Z E IMPRIMIR REPORTE</span>
+</button>
+<div class="hidden p-space-sm rounded-lg bg-primary-container text-on-primary flex items-center gap-space-xs animate-fadeIn" id="toastSuccess">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm">Corte procesado e impreso en memoria local. Turno cerrado con éxito.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full bg-surface-container-low p-space-sm rounded-lg shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-xs text-secondary font-label-receipt text-label-receipt">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>MODO AUDITORÍA LOCAL RESILIENTE</span>
+</span>
+<span>·</span>
+<span>Base de datos SQLite local sincronizada con nodo Erlang</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span>Checksum Fiscal:</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface font-semibold">SHA256: 7f8b9a2c4e1...</span>
+</div>
+</div>
+</div>
+<script>
+  function selectCorte(tipo) {
+    const btnX = document.getElementById('btnCorteX');
+    const btnZ = document.getElementById('btnCorteZ');
+    const lbl = document.getElementById('lblTipoCorte');
+    const actionBtn = document.getElementById('btnGenerarCorte');
+
+    if (tipo === 'X') {
+      btnX.className = 'flex items-center gap-space-xs px-space-md py-2 rounded-DEFAULT font-body-sm text-body-sm font-semibold transition-all bg-primary-container text-on-primary';
+      btnZ.className = 'flex items-center gap-space-xs px-space-md py-2 rounded-DEFAULT font-body-sm text-body-sm font-medium transition-all text-on-surface-variant hover:text-on-surface';
+      lbl.innerText = 'Modo: Corte Parcial X (Informativo - No Bloquea Caja)';
+      actionBtn.innerHTML = '<span class="material-symbols-outlined text-[24px]">print</span><span>IMPRIMIR CORTE PARCIAL X (INFORMATIVO)</span>';
+    } else {
+      btnZ.className = 'flex items-center gap-space-xs px-space-md py-2 rounded-DEFAULT font-body-sm text-body-sm font-semibold transition-all bg-primary-container text-on-primary';
+      btnX.className = 'flex items-center gap-space-xs px-space-md py-2 rounded-DEFAULT font-body-sm text-body-sm font-medium transition-all text-on-surface-variant hover:text-on-surface';
+      lbl.innerText = 'Modo: Corte Final Z (Definitivo - Cierre de Turno)';
+      actionBtn.innerHTML = '<span class="material-symbols-outlined text-[24px]">print</span><span>GENERAR CORTE Z E IMPRIMIR REPORTE</span>';
+    }
+  }
+
+  function ejecutarCorte() {
+    const toast = document.getElementById('toastSuccess');
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 4500);
+  }
+</script></main><footer class="w-full bg-surface-container-lowest py-space-md px-gutter-desktop shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full flex flex-col md:flex-row items-center justify-between gap-space-xs text-secondary"><div class="flex items-center gap-space-sm"><span class="font-label-receipt text-label-receipt">Frontera POS v2.4.1 (Erlang/OTP 26)</span><span class="font-label-receipt text-label-receipt">·</span><span class="font-label-receipt text-label-receipt">Sucursal: Tijuana Centro #59</span></div><div class="font-label-receipt text-label-receipt text-on-surface-variant font-medium">MODO FISCAL ACTIVO · OPERACIÓN LOCAL RESILIENTE</div></div></footer></body></html>

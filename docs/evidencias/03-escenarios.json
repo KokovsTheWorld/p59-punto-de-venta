@@ -1,0 +1,388 @@
+{
+  "escenarios": [
+    {
+      "duracion_ms": 1112,
+      "escenario": "a",
+      "ok": true,
+      "pasos": [
+        {
+          "datos": "pendiente_de_revision",
+          "paso": "A1 cobro con terminal que cae tras cobrar"
+        },
+        {
+          "datos": "pagada",
+          "paso": "A1 reintento con la misma operacion_id"
+        },
+        {
+          "datos": "pendiente_de_revision",
+          "paso": "A2 cobro con terminal que cae antes de cobrar"
+        },
+        {
+          "datos": "abierta",
+          "paso": "A2 revisión"
+        },
+        {
+          "datos": "pagada",
+          "paso": "A2 cobro en efectivo"
+        }
+      ],
+      "titulo": "Terminal bancaria cae a mitad del cobro",
+      "verificaciones": [
+        {
+          "esperado": "pendiente_de_revision",
+          "obtenido": "pendiente_de_revision",
+          "ok": true,
+          "verificacion": "A1: la venta queda en revisión, no pagada"
+        },
+        {
+          "esperado": "no",
+          "obtenido": "no",
+          "ok": true,
+          "verificacion": "A1: no hay movimiento en el libro mientras está en revisión"
+        },
+        {
+          "esperado": [42,1],
+          "obtenido": [42,1],
+          "ok": true,
+          "verificacion": "A1: la unidad queda apartada (reservada), no vendida"
+        },
+        {
+          "esperado": "pagada",
+          "obtenido": "pagada",
+          "ok": true,
+          "verificacion": "A1: el reintento confirma con el cargo ya hecho"
+        },
+        {
+          "esperado": true,
+          "obtenido": true,
+          "ok": true,
+          "verificacion": "A1: el banco registra el cargo de esa referencia (sin cobrar de nuevo)"
+        },
+        {
+          "esperado": 41,
+          "obtenido": 41,
+          "ok": true,
+          "verificacion": "A1: existencia descontada exactamente una vez"
+        },
+        {
+          "esperado": "pendiente_de_revision",
+          "obtenido": "pendiente_de_revision",
+          "ok": true,
+          "verificacion": "A2: sin respuesta → revisión"
+        },
+        {
+          "esperado": "abierta",
+          "obtenido": "abierta",
+          "ok": true,
+          "verificacion": "A2: el banco no registra el cargo → la venta vuelve a abierta"
+        },
+        {
+          "esperado": "pagada",
+          "obtenido": "pagada",
+          "ok": true,
+          "verificacion": "A2: se cobra en efectivo y se confirma"
+        }
+      ]
+    },
+    {
+      "duracion_ms": 51,
+      "escenario": "b",
+      "ok": true,
+      "pasos": [
+        {
+          "datos": {
+            "folio": "T-000003",
+            "total": 60100,
+            "turno": 1
+          },
+          "paso": "Venta en turno anterior"
+        },
+        {
+          "datos": {
+            "diferencia": {
+              "mxn": 0,
+              "usd": 0
+            },
+            "efectivo_esperado": {
+              "mxn": 190150,
+              "usd": 0
+            }
+          },
+          "paso": "Cierre del turno anterior"
+        },
+        {
+          "datos": { "turno": 2 },
+          "paso": "Apertura del turno actual"
+        },
+        {
+          "datos": {
+            "id": "C-000001",
+            "monto": 60100,
+            "reembolso_efectivo": 60100,
+            "turno": 2,
+            "turno_original": 1
+          },
+          "paso": "Cancelación en el turno actual"
+        }
+      ],
+      "titulo": "Cancelación de un ticket del turno anterior",
+      "verificaciones": [
+        {
+          "esperado": {
+            "numero": 3,
+            "por_modalidad": {
+              "efectivo_mxn": 2,
+              "efectivo_usd": 0,
+              "mixto": 0,
+              "tarjeta": 1
+            },
+            "total": 120200
+          },
+          "obtenido": {
+            "numero": 3,
+            "por_modalidad": {
+              "efectivo_mxn": 2,
+              "efectivo_usd": 0,
+              "mixto": 0,
+              "tarjeta": 1
+            },
+            "total": 120200
+          },
+          "ok": true,
+          "verificacion": "El corte del turno anterior no cambia"
+        },
+        {
+          "esperado": 2,
+          "obtenido": 2,
+          "ok": true,
+          "verificacion": "La cancelación se registra en el turno actual"
+        },
+        {
+          "esperado": 1,
+          "obtenido": 1,
+          "ok": true,
+          "verificacion": "Conserva referencia al turno original"
+        },
+        {
+          "esperado": {
+            "monto": 60100,
+            "numero": 1
+          },
+          "obtenido": {
+            "monto": 60100,
+            "numero": 1
+          },
+          "ok": true,
+          "verificacion": "El corte actual muestra la cancelación"
+        },
+        {
+          "esperado": 39900,
+          "obtenido": 39900,
+          "ok": true,
+          "verificacion": "Efectivo esperado = fondo - reembolso"
+        },
+        {
+          "esperado": true,
+          "obtenido": true,
+          "ok": true,
+          "verificacion": "Invariante contable del turno actual"
+        },
+        {
+          "esperado": "C-000001",
+          "obtenido": "C-000001",
+          "ok": true,
+          "verificacion": "Cancelar dos veces devuelve el mismo movimiento"
+        },
+        {
+          "esperado": 1,
+          "obtenido": 1,
+          "ok": true,
+          "verificacion": "El ticket conserva su historia (1 reembolso)"
+        },
+        {
+          "esperado": 40,
+          "obtenido": 40,
+          "ok": true,
+          "verificacion": "Las unidades regresan al inventario"
+        }
+      ]
+    },
+    {
+      "duracion_ms": 29,
+      "escenario": "c",
+      "ok": true,
+      "pasos": [
+        {
+          "datos": {
+            "primera": "V-000004",
+            "segunda": "V-000004"
+          },
+          "paso": "Creación repetida con la misma operacion_id"
+        },
+        {
+          "datos": ["pagada","pagada","pagada","pagada","pagada"],
+          "paso": "5 confirmaciones simultáneas"
+        }
+      ],
+      "titulo": "Reintento de red: la misma confirmación llega varias veces",
+      "verificaciones": [
+        {
+          "esperado": "V-000004",
+          "obtenido": "V-000004",
+          "ok": true,
+          "verificacion": "La creación repetida devuelve la misma venta"
+        },
+        {
+          "esperado": 5,
+          "obtenido": 5,
+          "ok": true,
+          "verificacion": "Las 5 respuestas son exitosas"
+        },
+        {
+          "esperado": 1,
+          "obtenido": 1,
+          "ok": true,
+          "verificacion": "Todas devuelven el mismo folio"
+        },
+        {
+          "esperado": 4,
+          "obtenido": 4,
+          "ok": true,
+          "verificacion": "Una sola venta nueva en el libro"
+        },
+        {
+          "esperado": 39,
+          "obtenido": 39,
+          "ok": true,
+          "verificacion": "Inventario descontado una sola vez"
+        },
+        {
+          "esperado": ["error","venta_ya_pagada"],
+          "obtenido": ["error","venta_ya_pagada"],
+          "ok": true,
+          "verificacion": "Otra operacion_id sobre la venta pagada se rechaza"
+        }
+      ]
+    },
+    {
+      "duracion_ms": 28,
+      "escenario": "d",
+      "ok": true,
+      "pasos": [
+        {
+          "datos": { "tipo_cambio": "17.5000" },
+          "paso": "Tipo de cambio fijado"
+        },
+        {
+          "datos": {
+            "folio": "T-000005",
+            "recibido_usd": 2300,
+            "total_mxn": 30050
+          },
+          "paso": "Pago"
+        }
+      ],
+      "titulo": "Pago en dólares con cambio en pesos",
+      "verificaciones": [
+        {
+          "esperado": 40250,
+          "obtenido": 40250,
+          "ok": true,
+          "verificacion": "Dólares valorados al tipo de cambio de la operación (piso)"
+        },
+        {
+          "esperado": 10200,
+          "obtenido": 10200,
+          "ok": true,
+          "verificacion": "Cambio entregado en pesos"
+        },
+        {
+          "esperado": 175000,
+          "obtenido": 175000,
+          "ok": true,
+          "verificacion": "El ticket registra el tipo de cambio usado"
+        },
+        {
+          "esperado": 175000,
+          "obtenido": 175000,
+          "ok": true,
+          "verificacion": "Un cambio posterior del tipo de cambio no altera el ticket"
+        },
+        {
+          "esperado": 30050,
+          "obtenido": 30050,
+          "ok": true,
+          "verificacion": "pagos(MXN) - cambio = total"
+        }
+      ]
+    },
+    {
+      "duracion_ms": 26,
+      "escenario": "e",
+      "ok": true,
+      "pasos": [
+        {
+          "datos": {
+            "total": 30050,
+            "venta": "V-000006"
+          },
+          "paso": "Venta abierta sin pagar"
+        },
+        {
+          "datos": {
+            "en_proceso": [
+              {
+                "caja": 4,
+                "cajero": "Diego (turno siguiente)",
+                "estado": "abierta",
+                "id": "V-000006",
+                "total": 30050
+              }
+            ],
+            "ventas": 2
+          },
+          "paso": "Corte con la venta en proceso"
+        }
+      ],
+      "titulo": "Corte de caja con ventas en proceso",
+      "verificaciones": [
+        {
+          "esperado": 2,
+          "obtenido": 2,
+          "ok": true,
+          "verificacion": "La venta en proceso no se cuenta como vendida"
+        },
+        {
+          "esperado": {
+            "mxn": 59750,
+            "usd": 2300
+          },
+          "obtenido": {
+            "mxn": 59750,
+            "usd": 2300
+          },
+          "ok": true,
+          "verificacion": "El efectivo esperado no cambia por la venta en proceso"
+        },
+        {
+          "esperado": true,
+          "obtenido": true,
+          "ok": true,
+          "verificacion": "El corte la lista como 'en proceso'"
+        },
+        {
+          "esperado": 3,
+          "obtenido": 3,
+          "ok": true,
+          "verificacion": "Al pagarla, entra al corte"
+        },
+        {
+          "esperado": true,
+          "obtenido": true,
+          "ok": true,
+          "verificacion": "Invariante contable"
+        }
+      ]
+    }
+  ]
+}

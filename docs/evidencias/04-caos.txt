@@ -1,0 +1,32 @@
+# scripts/caos.sh — 2026-11-05 15:16:18
+
+--- Se mató: p59_caja_2 (<0.151.0> -> <0.168.0>)  supervisor p59_cajas_sup (one_for_one): OK
+   [ok] La caja fue reiniciada con otro pid
+   [ok] La venta sobrevivió (mismo pid; no estaba enlazada a la caja)
+   [ok] La caja recuperó su venta en curso desde disco
+   [ok] Las partidas no cambiaron
+   [ok] Las otras cajas no se reiniciaron (one_for_one)
+   [ok] La venta recuperada se cobra y confirma
+   [ok] Invariante de inventario (inicial - vendidas + devueltas, sin negativos)
+   [ok] Invariante contable del corte
+
+--- Se mató: p59_venta V-000002 (<0.169.0> -> <0.170.0>)  supervisor p59_ventas_sup (simple_one_for_one): OK
+   [ok] El proceso de la venta fue reiniciado
+   [ok] Se reconstruyó desde DETS con las mismas partidas
+   [ok] Sigue abierta
+   [ok] La venta recuperada se cobra y confirma
+   [ok] Invariante de inventario (inicial - vendidas + devueltas, sin negativos)
+   [ok] Invariante contable del corte
+
+--- Se mató: p59_inventario (<0.146.0> -> <0.172.0>)  supervisor p59_punto_de_venta_sup (rest_for_one): OK
+   [ok] Inventario reiniciado
+   [ok] La sucursal (cajas y ventas) se reinició después (rest_for_one)
+   [ok] Los servicios anteriores en el árbol no se tocaron
+   [ok] El libro se reconstruyó sin perder ventas
+   [ok] La venta abierta se reconstruyó con sus partidas
+   [ok] La venta recuperada se cobra y confirma
+   [ok] Invariante de inventario (inicial - vendidas + devueltas, sin negativos)
+   [ok] Invariante contable del corte
+
+Resultado: OK
+Evidencia: logs/caos-20261105-151619.json

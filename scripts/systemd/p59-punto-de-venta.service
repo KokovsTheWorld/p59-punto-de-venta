@@ -1,0 +1,22 @@
+# Unidad de systemd (modo usuario) para el release del punto de venta #59.
+# Instalacion (ver docs/MANUAL.md, seccion "Servicio systemd"):
+#   mkdir -p ~/.config/systemd/user
+#   cp scripts/systemd/p59-punto-de-venta.service ~/.config/systemd/user/
+#   systemctl --user daemon-reload && systemctl --user enable --now p59-punto-de-venta
+# Supone el repositorio clonado en ~/p59-punto-de-venta; ajuste las rutas si esta en otro lugar.
+[Unit]
+Description=Punto de venta #59 (Erlang/OTP, demo)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/p59-punto-de-venta/_build/default/rel/p59_punto_de_venta
+Environment=P59_PUERTO=8059
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=%h/p59-punto-de-venta/_build/default/rel/p59_punto_de_venta/bin/p59_punto_de_venta foreground
+ExecStop=%h/p59-punto-de-venta/_build/default/rel/p59_punto_de_venta/bin/p59_punto_de_venta stop
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

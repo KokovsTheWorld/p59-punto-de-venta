@@ -1,0 +1,36 @@
+# scripts/simular.sh — 2026-11-05 15:16:19
+
+=== Simulacion #59: 600 tickets confirmados en 9702 ms (61 tickets/s) ===
+Operaciones:
+  cancelaciones_turno_anterior         11
+  devoluciones                         12
+  efectivo_mxn                         271
+  efectivo_usd                         91
+  enviadas_a_revision                  2
+  mixto                                77
+  partidas_sin_existencia              37
+  reintentos_duplicados_enviados       29
+  revisiones_resueltas_sin_cargo       2
+  tarjeta                              161
+  tarjetas_rechazadas                  12
+  tickets                              600
+  ventas_abandonadas                   2
+Caos: #{supervisor => p59_cajas_sup,estrategia => one_for_one,
+        pid_antes => <<"<0.152.0>">>,pid_despues => <<"<0.573.0>">>,
+        proceso => p59_caja_3,reiniciada => true,
+        tickets_confirmados_al_matar => 377,
+        venta_en_curso_al_matar => <<"V-000378">>}
+Cortes turno 1 (cerrados):
+  caja 1 turno 1:  75 ventas     $99,017.84  canc 0 dev 0  esperado   $48,308.12  dif $0.00  invariante true
+  caja 2 turno 1:  75 ventas     $97,266.74  canc 0 dev 0  esperado   $60,986.99  dif $0.00  invariante true
+  caja 3 turno 1:  75 ventas     $78,011.98  canc 0 dev 0  esperado   $34,314.09  dif -$50.00  invariante true
+  caja 4 turno 1:  75 ventas    $103,530.42  canc 0 dev 0  esperado   $60,852.68  dif $0.00  invariante true
+Cortes turno 2 (vigentes):
+  caja 1 turno 2:  75 ventas     $85,344.13  canc 2 dev 2  esperado   $36,845.70  dif -  invariante true
+  caja 2 turno 2:  75 ventas     $99,185.51  canc 3 dev 5  esperado   $45,886.17  dif -  invariante true
+  caja 3 turno 2:  75 ventas     $97,777.16  canc 3 dev 3  esperado   $56,168.65  dif -  invariante true
+  caja 4 turno 2:  75 ventas     $89,838.51  canc 3 dev 2  esperado   $34,915.05  dif -  invariante true
+Invariantes: inventario=true cortes=true una_venta_por_ticket=true folios_unicos=true
+Resultado: OK
+
+Reporte completo: logs/simulacion-20261105-151629.json

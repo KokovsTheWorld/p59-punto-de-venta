@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frontera POS #59</title>
+  <!-- Diseño: Google Stitch (design/stitch/). CSS compilado localmente con
+       scripts/construir_css.sh: la demo no depende de Internet. -->
+  <link rel="stylesheet" href="/css/stitch.css">
+  <script>
+    try { if (localStorage.getItem('p59-tema') === 'oscuro') document.documentElement.classList.add('dark'); } catch (_) {}
+  </script>
+</head>
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="h-16 w-full px-margin lg:px-gutter-desktop flex items-center justify-between gap-space-md">
+      <div class="flex items-center gap-space-md shrink-0">
+        <a href="#/" class="flex items-center gap-space-xs">
+          <div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center">
+            <span class="material-symbols-outlined text-on-primary text-[20px]">point_of_sale</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-headline-md text-body-sm font-semibold tracking-tight text-on-surface">Frontera POS #59</span>
+            <span class="font-label-receipt text-label-receipt text-secondary uppercase">Tijuana, B.C. · OTP</span>
+          </div>
+        </a>
+        <div id="conexion" class="flex items-center gap-space-xs bg-surface-container-low px-space-xs py-1 rounded">
+          <span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+          <span class="font-body-sm text-body-sm font-medium text-tertiary-container">Conectando</span>
+        </div>
+        <div class="hidden xl:flex items-center bg-surface-container-low px-space-sm py-1 rounded">
+          <span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant font-medium">T.C. USD/MXN: <span id="tc-encabezado" class="font-semibold text-primary">—</span></span>
+        </div>
+      </div>
+      <nav id="menu" class="hidden lg:flex items-center gap-space-xs">
+        <a data-ruta="" href="#/">Tablero</a>
+        <a data-ruta="cobrar" href="#/cobrar/1">Cobrar</a>
+        <a data-ruta="caja" href="#/caja/1">Detalle de caja</a>
+        <a data-ruta="venta" href="#/venta">Detalle de venta</a>
+        <a data-ruta="corte" href="#/corte">Corte de caja</a>
+        <a data-ruta="bitacora" href="#/bitacora">Bitácora</a>
+        <a data-ruta="simulacion" href="#/simulacion">Simulación</a>
+      </nav>
+      <div class="flex items-center gap-space-sm shrink-0">
+        <div class="hidden 2xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded">
+          <span class="material-symbols-outlined text-[16px] text-secondary">memory</span>
+          <span id="nodo-encabezado" class="font-label-numeric-sm text-label-numeric-sm text-on-secondary-container">—</span>
+        </div>
+        <button id="tema" class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Conmutar tema claro/oscuro" type="button">
+          <span class="material-symbols-outlined text-[18px]">contrast</span>
+        </button>
+        <div class="flex items-center gap-space-xs pl-space-xs">
+          <div class="text-right hidden sm:flex flex-col">
+            <span id="cajero-encabezado" class="font-body-sm text-body-sm font-medium text-on-surface">Sucursal #59</span>
+            <span id="turno-encabezado" class="font-label-receipt text-label-receipt text-secondary">Tijuana Centro · 4 cajas</span>
+          </div>
+          <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+            <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="vista" class="w-full pt-20 pb-24 lg:pb-space-md bg-surface min-h-screen px-margin lg:px-gutter-desktop"></main>
+
+  <footer class="hidden lg:flex w-full px-gutter-desktop py-space-md items-center justify-between border-t border-surface-container-high bg-surface-container-lowest">
+    <span class="font-label-receipt text-label-receipt text-secondary">Frontera POS #59 · Erlang/OTP 27 · Sucursal Tijuana Centro</span>
+    <span class="font-label-receipt text-label-receipt text-secondary uppercase">Demo · comprobantes internos sin validez fiscal · persistencia local DETS</span>
+  </footer>
+
+  <!-- Barra inferior en celular (DESIGN.md: "Sticky quick-action bar anchored to the bottom"). -->
+  <nav id="menu-movil" class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-surface-container-lowest border-t border-surface-container-high grid grid-cols-6">
+    <a data-ruta="" href="#/"><span class="material-symbols-outlined">monitor_heart</span><span>Tablero</span></a>
+    <a data-ruta="cobrar" href="#/cobrar/1"><span class="material-symbols-outlined">point_of_sale</span><span>Cobrar</span></a>
+    <a data-ruta="caja" href="#/caja/1"><span class="material-symbols-outlined">badge</span><span>Caja</span></a>
+    <a data-ruta="corte" href="#/corte"><span class="material-symbols-outlined">calculate</span><span>Corte</span></a>
+    <a data-ruta="bitacora" href="#/bitacora"><span class="material-symbols-outlined">terminal</span><span>Bitácora</span></a>
+    <a data-ruta="simulacion" href="#/simulacion"><span class="material-symbols-outlined">science</span><span>Simular</span></a>
+  </nav>
+
+  <div id="toast" class="hidden fixed bottom-20 lg:bottom-6 left-1/2 -translate-x-1/2 z-[60] max-w-[calc(100%-2rem)] px-space-md py-space-sm rounded-lg bg-inverse-surface text-inverse-on-surface font-body-sm text-body-sm shadow-lg"></div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/ui.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

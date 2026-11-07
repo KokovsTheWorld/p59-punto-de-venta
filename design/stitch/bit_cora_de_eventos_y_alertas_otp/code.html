@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-container": "#d6e0f3", "tertiary": "#713b00", "surface-container-highest": "#dce2f3", "on-secondary-container": "#596373", "inverse-primary": "#83d7b1", "error-container": "#ffdad6", "secondary": "#555f6f", "on-tertiary": "#ffffff", "inverse-on-surface": "#ebf1ff", "on-primary": "#ffffff", "on-tertiary-fixed": "#2f1500", "on-primary-fixed-variant": "#005139", "surface-bright": "#f9f9ff", "tertiary-container": "#944f00", "primary-container": "#0b6e4f", "on-primary-fixed": "#002115", "surface-container": "#e7eefe", "primary-fixed": "#9ff4cc", "primary": "#00543b", "on-tertiary-container": "#ffd4b5", "on-surface-variant": "#3f4943", "outline-variant": "bec9c1", "on-tertiary-fixed-variant": "#6e3900", "on-error-container": "#93000a", "surface-dim": "#d3daea", "surface-tint": "#056c4d", "secondary-fixed-dim": "#bdc7d9", "background": "#f9f9ff", "primary-fixed-dim": "#83d7b1", "on-secondary-fixed-variant": "#3d4756", "on-primary-container": "#98edc6", "on-error": "#ffffff", "tertiary-fixed-dim": "#ffb77d", "on-surface": "#151c27", "tertiary-fixed": "#ffdcc3", "surface-variant": "#dce2f3", "on-background": "#151c27", "surface": "#f9f9ff", "error": "#ba1a1a", "on-secondary-fixed": "#121c2a", "on-secondary": "#ffffff", "surface-container-high": "#e2e8f8", "inverse-surface": "#2a313d", "secondary-fixed": "#d9e3f6", "surface-container-lowest": "#ffffff", "surface-container-low": "#f0f3ff", "outline": "#6f7a73" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xl": "2.5rem", "margin-desktop": "2rem", "gutter": "1rem", "space-lg": "1.5rem", "margin": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-md": "1rem" }, "fontFamily": { "label-numeric-sm": [ "JetBrains Mono" ], "headline-md": [ "Inter" ], "body-sm": [ "Inter" ], "body-md": [ "Inter" ], "label-receipt": [ "JetBrains Mono" ], "body-lg": [ "Inter" ], "headline-xl": [ "Inter" ], "headline-lg-mobile": [ "Inter" ], "headline-lg": [ "Inter" ], "label-numeric-md": [ "JetBrains Mono" ], "headline-xl-mobile": [ "Inter" ], "label-numeric-lg": [ "JetBrains Mono" ] }, "fontSize": { "label-numeric-sm": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0", "fontWeight": "500" } ], "headline-md": [ "1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-sm": [ "0.875rem", { "lineHeight": "1.25rem", "fontWeight": "400" } ], "body-md": [ "1rem", { "lineHeight": "1.5rem", "fontWeight": "400" } ], "label-receipt": [ "0.75rem", { "lineHeight": "1.125rem", "letterSpacing": "0.02em", "fontWeight": "400" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.625rem", "fontWeight": "400" } ], "headline-xl": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "700" } ], "headline-lg-mobile": [ "1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-lg": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-numeric-md": [ "1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "500" } ], "headline-xl-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-numeric-lg": [ "1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">point_of_sale</span></div><div class="flex flex-col"><span class="font-headline-md text-body-sm font-semibold tracking-tight text-on-surface">Frontera POS #59</span><span class="font-label-receipt text-label-receipt text-secondary uppercase">Tijuana, B.C. · OTP</span></div></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-xs py-1 rounded-DEFAULT"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-body-sm text-body-sm font-medium text-primary">En vivo</span></div><div class="hidden xl:flex items-center bg-surface-container-low px-space-sm py-1 rounded-DEFAULT"><span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant font-medium">T.C. USD/MXN: <span class="font-semibold text-primary">18.2000</span></span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="tablero" href="#">Tablero</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="cobrar" href="#">Cobrar</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="detalle-de-caja" href="#">Detalle de caja</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="detalle-de-venta" href="#">Detalle de venta</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="corte-de-caja" href="#">Corte de caja</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="bitacora" href="#">Bitácora</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="simulacion" href="#">Simulación</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden 2xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-DEFAULT"><span class="material-symbols-outlined text-[16px] text-secondary">memory</span><span class="font-label-numeric-sm text-label-numeric-sm text-on-secondary-container">beam@tj-pos59 [800 SKUs]</span></div><button class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Conmutar tema" type="button"><span class="material-symbols-outlined text-[18px]">contrast</span></button><div class="flex items-center gap-space-xs pl-space-xs"><div class="text-right hidden sm:flex flex-col"><span class="font-body-sm text-body-sm font-medium text-on-surface">Cajero: M. Reyes</span><span class="font-label-receipt text-label-receipt text-secondary">Turno Matutino</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)] px-gutter-desktop py-space-md"><div class="flex flex-col w-full gap-space-md">
+<!-- Sub-Header Status Line & Quick Controls -->
+<div class="w-full flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">terminal</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface">Bitácora OTP &amp; Auditoría BEAM</h2>
+<span class="font-label-numeric-sm text-label-numeric-sm bg-surface-container-high px-space-xs py-0.5 rounded-DEFAULT text-on-surface-variant font-medium">beam@tj-pos59</span>
+</div>
+<p class="font-label-receipt text-label-receipt text-secondary">SUPERVISIÓN CONCURRENTE EN TIEMPO REAL · TIJUANA FRONTERA #59</p>
+</div>
+</div>
+<!-- Actions: Export CSV & Clear -->
+<div class="flex flex-wrap items-center gap-space-xs w-full xl:w-auto">
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-lg text-primary font-medium">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-numeric-sm text-label-numeric-sm">Ingestión viva (48 evts)</span>
+</div>
+<button class="flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" id="btn-export-csv">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="font-body-sm text-body-sm font-semibold">Exportar Bitácora CSV</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" id="btn-clear-logs">
+<span class="material-symbols-outlined text-[18px]">cleaning_services</span>
+<span class="font-body-sm text-body-sm font-semibold">Limpiar logs visuales</span>
+</button>
+</div>
+</div>
+<!-- Main Filter Bar -->
+<div class="w-full bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Semantic Severity Badges (Tabs) -->
+<div class="flex flex-wrap items-center gap-space-xs" id="severity-filters">
+<button class="filter-severity-btn flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-primary-container text-on-primary-container font-semibold transition-all" data-filter="all">
+<span class="material-symbols-outlined text-[16px]">view_list</span>
+<span class="font-body-sm text-body-sm font-semibold">Todos</span>
+<span class="font-label-numeric-sm text-label-numeric-sm bg-surface-container-lowest/30 px-1.5 py-0.5 rounded-DEFAULT text-on-primary">48</span>
+</button>
+<button class="filter-severity-btn flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all" data-filter="operando">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-body-sm text-body-sm font-medium">Operando</span>
+<span class="font-label-numeric-sm text-label-numeric-sm bg-surface-container-highest px-1.5 py-0.5 rounded-DEFAULT text-primary font-semibold">38</span>
+</button>
+<button class="filter-severity-btn flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all" data-filter="alerta">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span class="font-body-sm text-body-sm font-medium">Alerta</span>
+<span class="font-label-numeric-sm text-label-numeric-sm bg-surface-container-highest px-1.5 py-0.5 rounded-DEFAULT text-tertiary font-semibold">7</span>
+</button>
+<button class="filter-severity-btn flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all" data-filter="falla">
+<span class="material-symbols-outlined text-[16px] text-error" style="font-variation-settings: 'FILL' 1;">cancel</span>
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-body-sm text-body-sm font-medium">Falla</span>
+<span class="font-label-numeric-sm text-label-numeric-sm bg-error-container px-1.5 py-0.5 rounded-DEFAULT text-on-error-container font-semibold">3</span>
+</button>
+</div>
+<!-- Live Process Search Field -->
+<div class="relative flex-1 lg:max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-secondary text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-low rounded-lg font-label-numeric-sm text-label-numeric-sm text-on-surface placeholder:text-secondary focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="search-input" placeholder="Buscar por PID (&lt;0.148.0&gt;), timeout, exit, pinpad..." type="text"/>
+</div>
+</div>
+<!-- Component Origin Filter Strip -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xs">
+<span class="font-label-receipt text-label-receipt text-secondary uppercase tracking-wider pr-space-xs">Origen de componente:</span>
+<button class="origin-btn px-space-xs py-1 rounded-DEFAULT bg-surface-container-high text-on-surface font-label-numeric-sm text-label-numeric-sm font-semibold" data-origin="all">Todos</button>
+<button class="origin-btn px-space-xs py-1 rounded-DEFAULT bg-surface-container-low text-secondary hover:text-on-surface font-label-numeric-sm text-label-numeric-sm" data-origin="gen_server cajas">gen_server cajas</button>
+<button class="origin-btn px-space-xs py-1 rounded-DEFAULT bg-surface-container-low text-secondary hover:text-on-surface font-label-numeric-sm text-label-numeric-sm" data-origin="supervisor OTP">supervisor OTP</button>
+<button class="origin-btn px-space-xs py-1 rounded-DEFAULT bg-surface-container-low text-secondary hover:text-on-surface font-label-numeric-sm text-label-numeric-sm" data-origin="terminal bancaria">terminal bancaria</button>
+<button class="origin-btn px-space-xs py-1 rounded-DEFAULT bg-surface-container-low text-secondary hover:text-on-surface font-label-numeric-sm text-label-numeric-sm" data-origin="sincronización inventario ETS">sincronización ETS</button>
+<button class="origin-btn px-space-xs py-1 rounded-DEFAULT bg-surface-container-low text-secondary hover:text-on-surface font-label-numeric-sm text-label-numeric-sm" data-origin="tipo de cambio banxico/local">T.C. banxico/local</button>
+</div>
+</div>
+<!-- Content Grid: Live Event Feed (8 cols) + Cluster Health / Telemetry (4 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<!-- LEFT: Audit & Event Log Feed (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm min-w-0">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">dataset</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Secuencia de Eventos OTP</h3>
+</div>
+<span class="font-label-numeric-sm text-label-numeric-sm text-secondary">Precisión: ±0.001ms NTP-Sync</span>
+</div>
+<!-- Events List -->
+<div class="flex flex-col gap-space-xs" id="events-container">
+<!-- EVENT 1: RED FALLA -->
+<div class="event-item group flex flex-col md:flex-row items-start md:items-center justify-between p-space-sm rounded-lg bg-error-container/20 hover:bg-error-container/40 transition-colors gap-space-xs" data-origin="terminal bancaria" data-pid="&lt;0.148.0&gt;" data-severity="falla">
+<div class="flex items-start md:items-center gap-space-sm min-w-0">
+<span class="font-label-numeric-sm text-label-numeric-sm text-secondary whitespace-nowrap">14:31:02.812</span>
+<div class="flex items-center gap-1.5 px-space-xs py-0.5 rounded-DEFAULT bg-error-container text-on-error-container shrink-0">
+<span class="material-symbols-outlined text-[15px] text-error" style="font-variation-settings: 'FILL' 1;">cancel</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span class="font-label-receipt text-label-receipt font-semibold tracking-wider">Falla</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-numeric-sm text-label-numeric-sm font-semibold text-error bg-error-container/50 px-1 rounded-DEFAULT">&lt;0.148.0&gt;</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface font-semibold truncate">terminal_pinpad_timeout en Caja #3</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">La terminal no respondió en 5000ms. Supervisor OTP retuvo venta en estado <code class="bg-surface-container px-1 py-0.5 rounded text-error font-label-numeric-sm text-label-receipt">en_revision</code>.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<span class="font-label-receipt text-label-receipt text-secondary bg-surface-container px-space-xs py-0.5 rounded-DEFAULT">terminal bancaria</span>
+</div>
+</div>
+<!-- EVENT 2: ÁMBAR ALERTA -->
+<div class="event-item group flex flex-col md:flex-row items-start md:items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors gap-space-xs" data-origin="supervisor OTP" data-pid="&lt;0.89.0&gt;" data-severity="alerta">
+<div class="flex items-start md:items-center gap-space-sm min-w-0">
+<span class="font-label-numeric-sm text-label-numeric-sm text-secondary whitespace-nowrap">14:31:04.105</span>
+<div class="flex items-center gap-1.5 px-space-xs py-0.5 rounded-DEFAULT bg-tertiary-container/20 text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[15px] text-tertiary" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+<span class="font-label-receipt text-label-receipt font-semibold tracking-wider">Alerta</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-numeric-sm text-label-numeric-sm font-semibold text-tertiary bg-surface-container-high px-1 rounded-DEFAULT">&lt;0.89.0&gt;</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface font-medium truncate">Supervisor OTP: Iniciando reinicio de worker</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Worker <code class="bg-surface-container px-1 rounded font-label-numeric-sm text-label-receipt">pinpad_worker_3</code> con estrategia OTP <code class="bg-surface-container px-1 rounded font-label-numeric-sm text-label-receipt">one_for_one</code>.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<span class="font-label-receipt text-label-receipt text-secondary bg-surface-container px-space-xs py-0.5 rounded-DEFAULT">supervisor OTP</span>
+</div>
+</div>
+<!-- EVENT 3: VERDE OPERANDO -->
+<div class="event-item group flex flex-col md:flex-row items-start md:items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors gap-space-xs" data-origin="terminal bancaria" data-pid="&lt;0.155.0&gt;" data-severity="operando">
+<div class="flex items-start md:items-center gap-space-sm min-w-0">
+<span class="font-label-numeric-sm text-label-numeric-sm text-secondary whitespace-nowrap">14:31:05.240</span>
+<div class="flex items-center gap-1.5 px-space-xs py-0.5 rounded-DEFAULT bg-primary/10 text-primary shrink-0">
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-receipt text-label-receipt font-semibold tracking-wider">Operando</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-numeric-sm text-label-numeric-sm font-semibold text-primary bg-primary/10 px-1 rounded-DEFAULT">&lt;0.155.0&gt;</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface font-semibold truncate">Worker pinpad reiniciado y enlazado con éxito</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Estado restaurado desde Mnesia sin pérdida de ticket. Transacción reanudada.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<span class="font-label-receipt text-label-receipt text-secondary bg-surface-container px-space-xs py-0.5 rounded-DEFAULT">terminal bancaria</span>
+</div>
+</div>
+<!-- EVENT 4: VERDE OPERANDO -->
+<div class="event-item group flex flex-col md:flex-row items-start md:items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors gap-space-xs" data-origin="sincronización inventario ETS" data-pid="ets_cache" data-severity="operando">
+<div class="flex items-start md:items-center gap-space-sm min-w-0">
+<span class="font-label-numeric-sm text-label-numeric-sm text-secondary whitespace-nowrap">14:28:44.090</span>
+<div class="flex items-center gap-1.5 px-space-xs py-0.5 rounded-DEFAULT bg-primary/10 text-primary shrink-0">
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-receipt text-label-receipt font-semibold tracking-wider">Operando</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-numeric-sm text-label-numeric-sm font-semibold text-secondary bg-surface-container px-1 rounded-DEFAULT">ETS Cache</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface font-semibold truncate">Actualización masiva de inventario</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">800 SKUs validados en memoria compartida, concurrencia read-concurrency activada, 0 bloqueos.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<span class="font-label-receipt text-label-receipt text-secondary bg-surface-container px-space-xs py-0.5 rounded-DEFAULT">sincronización ETS</span>
+</div>
+</div>
+<!-- EVENT 5: ÁMBAR ALERTA -->
+<div class="event-item group flex flex-col md:flex-row items-start md:items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors gap-space-xs" data-origin="tipo de cambio banxico/local" data-pid="tc_monitor" data-severity="alerta">
+<div class="flex items-start md:items-center gap-space-sm min-w-0">
+<span class="font-label-numeric-sm text-label-numeric-sm text-secondary whitespace-nowrap">14:15:20.001</span>
+<div class="flex items-center gap-1.5 px-space-xs py-0.5 rounded-DEFAULT bg-tertiary-container/20 text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[15px] text-tertiary" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+<span class="font-label-receipt text-label-receipt font-semibold tracking-wider">Alerta</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-numeric-sm text-label-numeric-sm font-semibold text-tertiary bg-surface-container-high px-1 rounded-DEFAULT">T.C. Monitor</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface font-medium truncate">Variación de tipo de cambio detectada</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">18.1800 -&gt; 18.2000 USD/MXN. Notificado a las 4 cajas en broadcast OTP mediante pg2.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<span class="font-label-receipt text-label-receipt text-secondary bg-surface-container px-space-xs py-0.5 rounded-DEFAULT">T.C. banxico/local</span>
+</div>
+</div>
+<!-- EVENT 6: ROJO FALLA -->
+<div class="event-item group flex flex-col md:flex-row items-start md:items-center justify-between p-space-sm rounded-lg bg-error-container/20 hover:bg-error-container/40 transition-colors gap-space-xs" data-origin="gen_server cajas" data-pid="&lt;0.151.0&gt;" data-severity="falla">
+<div class="flex items-start md:items-center gap-space-sm min-w-0">
+<span class="font-label-numeric-sm text-label-numeric-sm text-secondary whitespace-nowrap">14:02:11.750</span>
+<div class="flex items-center gap-1.5 px-space-xs py-0.5 rounded-DEFAULT bg-error-container text-on-error-container shrink-0">
+<span class="material-symbols-outlined text-[15px] text-error" style="font-variation-settings: 'FILL' 1;">cancel</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span class="font-label-receipt text-label-receipt font-semibold tracking-wider">Falla</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-numeric-sm text-label-numeric-sm font-semibold text-error bg-error-container/50 px-1 rounded-DEFAULT">&lt;0.151.0&gt;</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface font-semibold truncate">Caja #4: Proceso recibió señal {'EXIT'}</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant"><code class="bg-surface-container px-1 rounded font-label-numeric-sm text-label-receipt">{'EXIT', Reason: badarith}</code> en cálculo de descuento irregular con decimales.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<span class="font-label-receipt text-label-receipt text-secondary bg-surface-container px-space-xs py-0.5 rounded-DEFAULT">gen_server cajas</span>
+</div>
+</div>
+<!-- EVENT 7: VERDE OPERANDO -->
+<div class="event-item group flex flex-col md:flex-row items-start md:items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors gap-space-xs" data-origin="supervisor OTP" data-pid="supervisor" data-severity="operando">
+<div class="flex items-start md:items-center gap-space-sm min-w-0">
+<span class="font-label-numeric-sm text-label-numeric-sm text-secondary whitespace-nowrap">14:02:11.890</span>
+<div class="flex items-center gap-1.5 px-space-xs py-0.5 rounded-DEFAULT bg-primary/10 text-primary shrink-0">
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-receipt text-label-receipt font-semibold tracking-wider">Operando</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-numeric-sm text-label-numeric-sm font-semibold text-primary bg-primary/10 px-1 rounded-DEFAULT">Supervisor OTP</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface font-semibold truncate">Caja #4 resucitada en 140ms</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Estado de caja intacto, reanudación transparente para el cajero sin reinicio de terminal física.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<span class="font-label-receipt text-label-receipt text-secondary bg-surface-container px-space-xs py-0.5 rounded-DEFAULT">supervisor OTP</span>
+</div>
+</div>
+</div>
+<!-- Feed Footer Info -->
+<div class="w-full flex items-center justify-between pt-space-sm border-t-0 bg-surface-container-low p-space-xs rounded-lg mt-space-xs">
+<span class="font-label-receipt text-label-receipt text-secondary">BUFFER EN MEMORIA: 48/500 EVENTOS</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-primary font-medium">Auto-scroll: Activo</span>
+</div>
+</div>
+<!-- RIGHT: Cluster Health & OTP Telemetry (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Cluster Health Summary Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">ecg_heart</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Salud del Clúster OTP</h3>
+</div>
+<span class="font-label-receipt text-label-receipt bg-surface-container px-space-xs py-0.5 rounded-DEFAULT text-secondary">BEAM Node</span>
+</div>
+<!-- Metric 1: MTTR -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-secondary">MTTR (Recuperación Media)</span>
+<span class="font-headline-lg text-headline-lg text-primary font-bold">142 <span class="text-body-md font-normal text-secondary">ms</span></span>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+</div>
+<!-- Metric 2: Node Uptime -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-secondary">Uptime Global del Nodo</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">99.998%</span>
+<span class="font-label-receipt text-label-receipt text-secondary">42 días continuos en producción</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+</div>
+</div>
+<!-- Inline SVG Sparkline: Process Restarts vs Time -->
+<div class="flex flex-col gap-space-xs p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between">
+<span class="font-label-receipt text-label-receipt text-secondary">HISTÓRICO REINICIOS WORKERS (24H)</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-primary font-semibold">2 incidentes</span>
+</div>
+<div class="w-full h-14 flex items-end">
+<svg class="w-full h-full text-primary" fill="none" preserveaspectratio="none" viewbox="0 0 200 40">
+<path d="M 0,35 L 25,35 L 30,10 L 35,35 L 80,35 L 120,35 L 125,18 L 130,35 L 180,35 L 200,35" stroke="currentColor" stroke-linecap="round" stroke-width="2" vector-effect="non-scaling-stroke"></path>
+<circle cx="30" cy="10" fill="#ba1a1a" r="3"></circle>
+<circle cx="125" cy="18" fill="#944f00" r="3"></circle>
+</svg>
+</div>
+<div class="flex justify-between font-label-receipt text-label-receipt text-secondary">
+<span>00:00</span>
+<span>12:00</span>
+<span>Ahora</span>
+</div>
+</div>
+</div>
+<!-- Semantic Status Rules Card (Regla de tres estados) -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs pb-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">rule</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">Regla de Estados Semánticos</h4>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Criterio estricto de diagnóstico de actores OTP sin ambigüedad cromática:</p>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<!-- Operando -->
+<div class="flex items-center justify-between p-space-xs rounded-DEFAULT bg-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Operando</span>
+</div>
+<span class="font-label-receipt text-label-receipt text-secondary">Heartbeat OK &lt; 200ms</span>
+</div>
+<!-- Alerta -->
+<div class="flex items-center justify-between p-space-xs rounded-DEFAULT bg-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span class="font-body-sm text-body-sm font-semibold text-tertiary">Alerta</span>
+</div>
+<span class="font-label-receipt text-label-receipt text-secondary">Reinicio supervisado o lag</span>
+</div>
+<!-- Falla -->
+<div class="flex items-center justify-between p-space-xs rounded-DEFAULT bg-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[18px]" style="font-variation-settings: 'FILL' 1;">cancel</span>
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-body-sm text-body-sm font-semibold text-error">Falla</span>
+</div>
+<span class="font-label-receipt text-label-receipt text-secondary">Crash / Exit / Timeout 5s+</span>
+</div>
+</div>
+</div>
+<!-- Erlang Runtime Nodes Quick Inspector -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-receipt text-label-receipt text-secondary uppercase font-semibold">Memoria ETS y Procesos</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-primary">OTP 26.2</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-xs rounded-lg bg-surface-container-low">
+<span class="font-label-receipt text-label-receipt text-secondary block">Procesos BEAM</span>
+<span class="font-label-numeric-md text-label-numeric-md text-on-surface font-semibold">1,248 act</span>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low">
+<span class="font-label-receipt text-label-receipt text-secondary block">Tablas ETS</span>
+<span class="font-label-numeric-md text-label-numeric-md text-on-surface font-semibold">14 cargadas</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    let activeSeverity = 'all';
+    let activeOrigin = 'all';
+    let searchQuery = '';
+
+    const eventsContainer = document.getElementById('events-container');
+    const searchInput = document.getElementById('search-input');
+    const severityBtns = document.querySelectorAll('.filter-severity-btn');
+    const originBtns = document.querySelectorAll('.origin-btn');
+    const btnClearLogs = document.getElementById('btn-clear-logs');
+    const btnExportCsv = document.getElementById('btn-export-csv');
+
+    function applyFilters() {
+      const items = eventsContainer.querySelectorAll('.event-item');
+      items.forEach(item => {
+        const itemSev = item.getAttribute('data-severity');
+        const itemOrig = item.getAttribute('data-origin');
+        const itemPid = (item.getAttribute('data-pid') || '').toLowerCase();
+        const itemText = item.textContent.toLowerCase();
+
+        const matchSev = (activeSeverity === 'all' || itemSev === activeSeverity);
+        const matchOrig = (activeOrigin === 'all' || itemOrig === activeOrigin);
+        const matchQuery = !searchQuery || itemPid.includes(searchQuery) || itemText.includes(searchQuery);
+
+        if (matchSev && matchOrig && matchQuery) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    }
+
+    // Severity Filter Handlers
+    severityBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        severityBtns.forEach(b => {
+          b.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+          b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+        btn.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+        activeSeverity = btn.getAttribute('data-filter');
+        applyFilters();
+      });
+    });
+
+    // Origin Filter Handlers
+    originBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        originBtns.forEach(b => {
+          b.classList.remove('bg-surface-container-high', 'text-on-surface', 'font-semibold');
+          b.classList.add('bg-surface-container-low', 'text-secondary');
+        });
+        btn.classList.remove('bg-surface-container-low', 'text-secondary');
+        btn.classList.add('bg-surface-container-high', 'text-on-surface', 'font-semibold');
+        activeOrigin = btn.getAttribute('data-origin');
+        applyFilters();
+      });
+    });
+
+    // Search query listener
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value.trim().toLowerCase();
+        applyFilters();
+      });
+    }
+
+    // Clear logs visually
+    if (btnClearLogs) {
+      btnClearLogs.addEventListener('click', () => {
+        const items = eventsContainer.querySelectorAll('.event-item');
+        items.forEach(i => i.remove());
+        const emptyMsg = document.createElement('div');
+        emptyMsg.className = 'p-space-md text-center text-secondary font-label-receipt';
+        emptyMsg.textContent = 'NO HAY EVENTOS EN LA BITÁCORA VISUAL. ESPERANDO NUEVAS SEÑALES OTP...';
+        eventsContainer.appendChild(emptyMsg);
+      });
+    }
+
+    // Export CSV Dummy Trigger
+    if (btnExportCsv) {
+      btnExportCsv.addEventListener('click', () => {
+        const rows = [
+          ["Timestamp", "Severidad", "PID", "Origen", "Mensaje"],
+          ["14:31:02.812", "Falla", "<0.148.0>", "terminal bancaria", "terminal_pinpad_timeout en Caja #3"],
+          ["14:31:04.105", "Alerta", "<0.89.0>", "supervisor OTP", "Iniciando reinicio pinpad_worker_3 one_for_one"],
+          ["14:31:05.240", "Operando", "<0.155.0>", "terminal bancaria", "Worker pinpad reiniciado y enlazado con exito"],
+          ["14:28:44.090", "Operando", "ets_cache", "sincronización inventario ETS", "Actualizacion masiva 800 SKUs"],
+          ["14:15:20.001", "Alerta", "tc_monitor", "tipo de cambio banxico/local", "Variacion T.C. 18.1800 -> 18.2000"],
+          ["14:02:11.750", "Falla", "<0.151.0>", "gen_server cajas", "badarith en descuento irregular"],
+          ["14:02:11.890", "Operando", "supervisor", "supervisor OTP", "Caja #4 resucitada en 140ms"]
+        ];
+        const csvContent = "data:text/csv;charset=utf-8," + rows.map(e => e.join(",")).join("\n");
+        const encodedUri = encodeURI(csvContent);
+        const link = document.createElement("a");
+        link.setAttribute("href", encodedUri);
+        link.setAttribute("download", "bitacora_otp_frontera59.csv");
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest py-space-md px-gutter-desktop shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full flex flex-col md:flex-row items-center justify-between gap-space-xs text-secondary"><div class="flex items-center gap-space-sm"><span class="font-label-receipt text-label-receipt">Frontera POS v2.4.1 (Erlang/OTP 26)</span><span class="font-label-receipt text-label-receipt">·</span><span class="font-label-receipt text-label-receipt">Sucursal: Tijuana Centro #59</span></div><div class="font-label-receipt text-label-receipt text-on-surface-variant font-medium">MODO FISCAL ACTIVO · OPERACIÓN LOCAL RESILIENTE</div></div></footer></body></html>

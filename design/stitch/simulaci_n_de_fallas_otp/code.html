@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-container": "#d6e0f3", "tertiary": "#713b00", "surface-container-highest": "#dce2f3", "on-secondary-container": "#596373", "inverse-primary": "#83d7b1", "error-container": "#ffdad6", "secondary": "#555f6f", "on-tertiary": "#ffffff", "inverse-on-surface": "#ebf1ff", "on-primary": "#ffffff", "on-tertiary-fixed": "#2f1500", "on-primary-fixed-variant": "#005139", "surface-bright": "#f9f9ff", "tertiary-container": "#944f00", "primary-container": "#0b6e4f", "on-primary-fixed": "#002115", "surface-container": "#e7eefe", "primary-fixed": "#9ff4cc", "primary": "#00543b", "on-tertiary-container": "#ffd4b5", "on-surface-variant": "#3f4943", "outline-variant": "bec9c1", "on-tertiary-fixed-variant": "#6e3900", "on-error-container": "#93000a", "surface-dim": "#d3daea", "surface-tint": "#056c4d", "secondary-fixed-dim": "#bdc7d9", "background": "#f9f9ff", "primary-fixed-dim": "#83d7b1", "on-secondary-fixed-variant": "#3d4756", "on-primary-container": "#98edc6", "on-error": "#ffffff", "tertiary-fixed-dim": "#ffb77d", "on-surface": "#151c27", "tertiary-fixed": "#ffdcc3", "surface-variant": "#dce2f3", "on-background": "#151c27", "surface": "#f9f9ff", "error": "#ba1a1a", "on-secondary-fixed": "#121c2a", "on-secondary": "#ffffff", "surface-container-high": "#e2e8f8", "inverse-surface": "#2a313d", "secondary-fixed": "#d9e3f6", "surface-container-lowest": "#ffffff", "surface-container-low": "#f0f3ff", "outline": "#6f7a73" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xl": "2.5rem", "margin-desktop": "2rem", "gutter": "1rem", "space-lg": "1.5rem", "margin": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-md": "1rem" }, "fontFamily": { "label-numeric-sm": [ "JetBrains Mono" ], "headline-md": [ "Inter" ], "body-sm": [ "Inter" ], "body-md": [ "Inter" ], "label-receipt": [ "JetBrains Mono" ], "body-lg": [ "Inter" ], "headline-xl": [ "Inter" ], "headline-lg-mobile": [ "Inter" ], "headline-lg": [ "Inter" ], "label-numeric-md": [ "JetBrains Mono" ], "headline-xl-mobile": [ "Inter" ], "label-numeric-lg": [ "JetBrains Mono" ] }, "fontSize": { "label-numeric-sm": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0", "fontWeight": "500" } ], "headline-md": [ "1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-sm": [ "0.875rem", { "lineHeight": "1.25rem", "fontWeight": "400" } ], "body-md": [ "1rem", { "lineHeight": "1.5rem", "fontWeight": "400" } ], "label-receipt": [ "0.75rem", { "lineHeight": "1.125rem", "letterSpacing": "0.02em", "fontWeight": "400" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.625rem", "fontWeight": "400" } ], "headline-xl": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "700" } ], "headline-lg-mobile": [ "1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-lg": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-numeric-md": [ "1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "500" } ], "headline-xl-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-numeric-lg": [ "1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">point_of_sale</span></div><div class="flex flex-col"><span class="font-headline-md text-body-sm font-semibold tracking-tight text-on-surface">Frontera POS #59</span><span class="font-label-receipt text-label-receipt text-secondary uppercase">Tijuana, B.C. · OTP</span></div></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-xs py-1 rounded-DEFAULT"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-body-sm text-body-sm font-medium text-primary">En vivo</span></div><div class="hidden xl:flex items-center bg-surface-container-low px-space-sm py-1 rounded-DEFAULT"><span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant font-medium">T.C. USD/MXN: <span class="font-semibold text-primary">18.2000</span></span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="tablero" href="#">Tablero</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="cobrar" href="#">Cobrar</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="detalle-de-caja" href="#">Detalle de caja</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="detalle-de-venta" href="#">Detalle de venta</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="corte-de-caja" href="#">Corte de caja</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="bitacora" href="#">Bitácora</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm font-medium" data-path="simulacion" href="#">Simulación</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden 2xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-DEFAULT"><span class="material-symbols-outlined text-[16px] text-secondary">memory</span><span class="font-label-numeric-sm text-label-numeric-sm text-on-secondary-container">beam@tj-pos59 [800 SKUs]</span></div><button class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Conmutar tema" type="button"><span class="material-symbols-outlined text-[18px]">contrast</span></button><div class="flex items-center gap-space-xs pl-space-xs"><div class="text-right hidden sm:flex flex-col"><span class="font-body-sm text-body-sm font-medium text-on-surface">Cajero: M. Reyes</span><span class="font-label-receipt text-label-receipt text-secondary">Turno Matutino</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)] px-gutter-desktop py-space-md"><div class="flex flex-col w-full gap-space-lg">
+<!-- Hazard Banner de Simulación de Alta Tensión -->
+<div class="w-full bg-tertiary-container text-on-tertiary-container px-space-md py-space-sm rounded-lg shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[24px] text-tertiary-fixed animate-pulse">warning</span>
+<div class="flex flex-col">
+<span class="font-headline-md text-body-sm font-bold tracking-tight uppercase text-on-tertiary-container">
+          MODO SIMULACIÓN ACTIVO — LABORATORIO DE RESILIENCIA Y TOLERANCIA A FALLOS BEAM
+        </span>
+<span class="font-body-sm text-body-sm opacity-90 text-on-tertiary-container">
+          Inyección directa de anomalías en vivo para los 4 actores de caja (Tijuana Centro #59). Auto-sanación vía Erlang/OTP Supervision Trees.
+        </span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-auto">
+<span class="font-label-receipt text-label-receipt px-space-xs py-1 rounded bg-tertiary text-on-tertiary font-semibold uppercase">
+        SIN IMPACTO FISCAL NI HARDWARE
+      </span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-tertiary-container font-semibold">
+        OTP 26.2.1
+      </span>
+</div>
+</div>
+<!-- Header de Controles de Demostración & Auditorio -->
+<div class="w-full bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[28px]">science</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Demostración en Vivo: OTP Actor Fault Injection</h1>
+</div>
+<p class="font-body-md text-body-md text-secondary">
+        Demostración de preservación de estado local Mnesia y reactivación instantánea de procesos mediante estrategia de supervisión <span class="font-label-numeric-sm text-primary font-semibold">one_for_one</span>.
+      </p>
+</div>
+<!-- Barra de Herramientas de Proyección -->
+<div class="flex flex-wrap items-center gap-space-sm w-full xl:w-auto">
+<!-- Selector Modo Auditorio -->
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-lg">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">present_to_all</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Modo Auditorio:</span>
+<button class="px-space-sm py-1 rounded bg-surface-container-highest text-on-surface font-body-sm text-body-sm font-semibold hover:bg-primary hover:text-on-primary transition-colors" id="toggle-auditorium" type="button">
+          Normal
+        </button>
+</div>
+<!-- Restablecer Todos los Actores -->
+<button class="flex items-center gap-space-xs bg-surface-container-high text-on-surface px-space-sm py-space-xs rounded-lg hover:bg-surface-container-highest transition-colors font-body-sm text-body-sm font-medium" id="btn-reboot-all" type="button">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+        Reinicio Limpio
+      </button>
+<!-- Contador de Restarts Globales -->
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-lg">
+<span class="font-label-receipt text-label-receipt text-secondary uppercase">Restarts Globales:</span>
+<span class="font-label-numeric-md text-label-numeric-md text-primary font-bold" id="global-restart-count">0</span>
+</div>
+</div>
+</div>
+<!-- Layout Principal: Grilla de Inyección de Fallos + Visualizador de Árbol OTP -->
+<div class="grid grid-cols-1 2xl:grid-cols-12 gap-space-lg w-full">
+<!-- Panel Izquierdo: Tarjetas de Inyección de Fallas por Caja (5 Cols en 2xl) -->
+<div class="2xl:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary">bolt</span>
+          Inyectores de Falla por Actor
+        </h2>
+<span class="font-label-receipt text-label-receipt text-secondary uppercase">4 Actores Registrados</span>
+</div>
+<!-- Caja 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">point_of_sale</span>
+<span class="font-headline-md text-body-md font-semibold text-on-surface">Caja 01 (Línea Rápida)</span>
+</div>
+<span class="font-label-numeric-sm text-label-numeric-sm bg-surface-container px-space-xs py-0.5 rounded text-on-surface-variant font-medium" id="badge-pid-1">&lt;0.142.0&gt;</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+          Atiende transacciones express en efectivo MXN/USD. Alta frecuencia de eventos de teclado.
+        </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs pt-space-xs">
+<button class="w-full bg-error text-on-error px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm font-semibold hover:opacity-90 flex items-center justify-center gap-space-xs transition-transform active:scale-95" data-action="kill" data-box="1">
+<span class="material-symbols-outlined text-[18px]">dangerous</span>
+            exit(Pid, kill)
+          </button>
+<button class="w-full bg-tertiary text-on-tertiary px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm font-semibold hover:opacity-90 flex items-center justify-center gap-space-xs transition-transform active:scale-95" data-action="cpu-lock" data-box="1">
+<span class="material-symbols-outlined text-[18px]">hourglass_top</span>
+            Bucle Infinito CPU
+          </button>
+</div>
+</div>
+<!-- Caja 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">point_of_sale</span>
+<span class="font-headline-md text-body-md font-semibold text-on-surface">Caja 02 (Mayoreo / Binacional)</span>
+</div>
+<span class="font-label-numeric-sm text-label-numeric-sm bg-surface-container px-space-xs py-0.5 rounded text-on-surface-variant font-medium" id="badge-pid-2">&lt;0.145.0&gt;</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+          Conexión activa con el socket de sincronización fiscal satélite y conversión de divisas en tiempo real.
+        </p>
+<div class="grid grid-cols-1 gap-space-xs pt-space-xs">
+<button class="w-full bg-secondary text-on-secondary px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm font-semibold hover:opacity-90 flex items-center justify-center gap-space-xs transition-transform active:scale-95" data-action="net-drop" data-box="2">
+<span class="material-symbols-outlined text-[18px]">wifi_off</span>
+            Simular Pérdida de Paquetes / Red (Socket Drop)
+          </button>
+</div>
+</div>
+<!-- Caja 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">point_of_sale</span>
+<span class="font-headline-md text-body-md font-semibold text-on-surface">Caja 03 (Terminales Bancarias PinPad)</span>
+</div>
+<span class="font-label-numeric-sm text-label-numeric-sm bg-surface-container px-space-xs py-0.5 rounded text-on-surface-variant font-medium" id="badge-pid-3">&lt;0.148.0&gt;</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+          Canal integrado de pagos con tarjetas de débito/crédito mexicanas y foráneas (Visa/Mastercard/Amex).
+        </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs pt-space-xs">
+<button class="w-full bg-tertiary-container text-on-tertiary-container px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm font-semibold hover:opacity-90 flex items-center justify-center gap-space-xs transition-transform active:scale-95" data-action="pinpad-timeout" data-box="3">
+<span class="material-symbols-outlined text-[18px]">timer_off</span>
+            Timeout Pinpad (5s)
+          </button>
+<button class="w-full bg-secondary-container text-on-secondary-container px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm font-semibold hover:opacity-90 flex items-center justify-center gap-space-xs transition-transform active:scale-95" data-action="mailbox-flood" data-box="3">
+<span class="material-symbols-outlined text-[18px]">mark_email_unread</span>
+            Saturar Mailbox (10k msgs)
+          </button>
+</div>
+</div>
+<!-- Caja 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">point_of_sale</span>
+<span class="font-headline-md text-body-md font-semibold text-on-surface">Caja 04 (Devoluciones y Arqueo)</span>
+</div>
+<span class="font-label-numeric-sm text-label-numeric-sm bg-surface-container px-space-xs py-0.5 rounded text-on-surface-variant font-medium" id="badge-pid-4">&lt;0.151.0&gt;</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+          Caja especializada en arqueos binacionales y cortes intermedios con validación estricta de totales.
+        </p>
+<div class="grid grid-cols-1 gap-space-xs pt-space-xs">
+<button class="w-full bg-error text-on-error px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm font-semibold hover:opacity-90 flex items-center justify-center gap-space-xs transition-transform active:scale-95" data-action="badarith" data-box="4">
+<span class="material-symbols-outlined text-[18px]">calculate</span>
+            Crash de Código: badarith (División entre Cero)
+          </button>
+</div>
+</div>
+</div>
+<!-- Panel Derecho: Live OTP Supervision Tree + Telemetría de Recuperación (7 Cols en 2xl) -->
+<div class="2xl:col-span-7 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary">account_tree</span>
+          Monitor de Observabilidad en Vivo (OTP Tree)
+        </h2>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-receipt text-label-receipt text-on-surface-variant font-semibold">TICK: 50ms</span>
+</div>
+</div>
+<!-- Lienzo Gráfico del Árbol de Procesos OTP -->
+<div class="w-full bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-lg relative overflow-x-auto" id="otp-tree-canvas">
+<!-- Nivel 1: Raíz Supervisor Principal -->
+<div class="flex flex-col items-center">
+<div class="bg-primary text-on-primary px-space-md py-space-sm rounded-lg shadow-sm flex flex-col items-center min-w-[240px]">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-receipt text-label-receipt px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-semibold uppercase">supervisor</span>
+<span class="font-label-numeric-sm text-label-numeric-sm font-semibold">&lt;0.110.0&gt;</span>
+</div>
+<span class="font-headline-md text-body-md font-bold mt-1">pos_root_sup</span>
+<div class="flex items-center gap-space-xs text-xs mt-1 opacity-90">
+<span class="font-label-receipt text-label-receipt">strategy: one_for_all</span>
+<span>·</span>
+<span class="font-label-receipt text-label-receipt">max_r: 3/5s</span>
+</div>
+</div>
+<!-- Conector Ortogonal Vertical -->
+<div class="w-0.5 h-8 bg-secondary-fixed-dim"></div>
+</div>
+<!-- Nivel 2: Supervisores y Servicios Compartidos -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md relative">
+<!-- Conectores Horizontales de Bus -->
+<div class="hidden md:block absolute -top-4 left-1/6 right-1/6 h-0.5 bg-secondary-fixed-dim"></div>
+<!-- Rama 1: Subárbol de Cajas -->
+<div class="flex flex-col items-center">
+<div class="w-full bg-surface-container-high p-space-sm rounded-lg flex flex-col items-center text-center">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-receipt text-label-receipt px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-semibold uppercase">supervisor</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface font-semibold">&lt;0.138.0&gt;</span>
+</div>
+<span class="font-headline-md text-body-md font-bold text-on-surface">cajas_sup</span>
+<span class="font-label-receipt text-label-receipt text-on-surface-variant mt-1">one_for_one · 5/60s</span>
+<div class="flex items-center gap-1 mt-2 text-primary font-medium text-xs">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Operando</span>
+</div>
+</div>
+<div class="w-0.5 h-8 bg-secondary-fixed-dim"></div>
+</div>
+<!-- Rama 2: Inventario Mnesia -->
+<div class="flex flex-col items-center">
+<div class="w-full bg-surface-container p-space-sm rounded-lg flex flex-col items-center text-center">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-receipt text-label-receipt px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-semibold uppercase">worker</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface font-semibold">&lt;0.120.0&gt;</span>
+</div>
+<span class="font-headline-md text-body-md font-bold text-on-surface">inventario_srv</span>
+<span class="font-label-receipt text-label-receipt text-on-surface-variant mt-1">Mnesia RAM/Disc · 800 SKUs</span>
+<div class="flex items-center gap-1 mt-2 text-primary font-medium text-xs">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Operando</span>
+</div>
+</div>
+</div>
+<!-- Rama 3: Tipo de Cambio Servidor -->
+<div class="flex flex-col items-center">
+<div class="w-full bg-surface-container p-space-sm rounded-lg flex flex-col items-center text-center">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-receipt text-label-receipt px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-semibold uppercase">worker</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface font-semibold">&lt;0.124.0&gt;</span>
+</div>
+<span class="font-headline-md text-body-md font-bold text-on-surface">tc_exchange_srv</span>
+<span class="font-label-receipt text-label-receipt text-on-surface-variant mt-1">18.2000 USD/MXN · Banxico Sync</span>
+<div class="flex items-center gap-1 mt-2 text-primary font-medium text-xs">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Operando</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Nivel 3: Hijos Monitoreados por cajas_sup (Cajas 1 a 4) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm pt-space-xs">
+<!-- Nodo Caja 1 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs transition-colors duration-300" id="tree-node-1">
+<div class="flex items-center justify-between">
+<span class="font-label-receipt text-label-receipt px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-semibold">worker</span>
+<span class="font-label-numeric-sm text-label-numeric-sm font-bold text-on-surface" id="node-pid-1">&lt;0.142.0&gt;</span>
+</div>
+<span class="font-body-md text-body-sm font-bold text-on-surface">caja_01_worker</span>
+<div class="flex items-center justify-between text-xs pt-1">
+<span class="font-label-receipt text-label-receipt text-secondary">restarts: <span class="font-bold" id="node-restarts-1">0</span>/5</span>
+<div class="flex items-center gap-1 text-primary font-semibold" id="node-status-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Operando</span>
+</div>
+</div>
+</div>
+<!-- Nodo Caja 2 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs transition-colors duration-300" id="tree-node-2">
+<div class="flex items-center justify-between">
+<span class="font-label-receipt text-label-receipt px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-semibold">worker</span>
+<span class="font-label-numeric-sm text-label-numeric-sm font-bold text-on-surface" id="node-pid-2">&lt;0.145.0&gt;</span>
+</div>
+<span class="font-body-md text-body-sm font-bold text-on-surface">caja_02_worker</span>
+<div class="flex items-center justify-between text-xs pt-1">
+<span class="font-label-receipt text-label-receipt text-secondary">restarts: <span class="font-bold" id="node-restarts-2">0</span>/5</span>
+<div class="flex items-center gap-1 text-primary font-semibold" id="node-status-2">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Operando</span>
+</div>
+</div>
+</div>
+<!-- Nodo Caja 3 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs transition-colors duration-300" id="tree-node-3">
+<div class="flex items-center justify-between">
+<span class="font-label-receipt text-label-receipt px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-semibold">worker</span>
+<span class="font-label-numeric-sm text-label-numeric-sm font-bold text-on-surface" id="node-pid-3">&lt;0.148.0&gt;</span>
+</div>
+<span class="font-body-md text-body-sm font-bold text-on-surface">caja_03_worker</span>
+<div class="flex items-center justify-between text-xs pt-1">
+<span class="font-label-receipt text-label-receipt text-secondary">restarts: <span class="font-bold" id="node-restarts-3">0</span>/5</span>
+<div class="flex items-center gap-1 text-primary font-semibold" id="node-status-3">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Operando</span>
+</div>
+</div>
+</div>
+<!-- Nodo Caja 4 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs transition-colors duration-300" id="tree-node-4">
+<div class="flex items-center justify-between">
+<span class="font-label-receipt text-label-receipt px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-semibold">worker</span>
+<span class="font-label-numeric-sm text-label-numeric-sm font-bold text-on-surface" id="node-pid-4">&lt;0.151.0&gt;</span>
+</div>
+<span class="font-body-md text-body-sm font-bold text-on-surface">caja_04_worker</span>
+<div class="flex items-center justify-between text-xs pt-1">
+<span class="font-label-receipt text-label-receipt text-secondary">restarts: <span class="font-bold" id="node-restarts-4">0</span>/5</span>
+<div class="flex items-center gap-1 text-primary font-semibold" id="node-status-4">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Operando</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Métricas Clave de Recuperación BEAM -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col">
+<span class="font-label-receipt text-label-receipt text-secondary uppercase">Tiempo Medio de Auto-Sanación</span>
+<span class="font-label-numeric-lg text-label-numeric-lg text-primary font-bold">14.8 ms</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sin bloqueo de UI ni pérdida de ticket</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col">
+<span class="font-label-receipt text-label-receipt text-secondary uppercase">Estado de Persistencia Mnesia</span>
+<span class="font-label-numeric-lg text-label-numeric-lg text-on-surface font-bold">100% Integra</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">WAL journaling síncrono activo</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col">
+<span class="font-label-receipt text-label-receipt text-secondary uppercase">Aislamiento de Cajas Vecinas</span>
+<span class="font-label-numeric-lg text-label-numeric-lg text-primary font-bold">0 Cascadas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Límites protegidos por actor mailboxes</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Consola de Logs en Vivo Erlang/BEAM Terminal -->
+<div class="w-full bg-inverse-surface text-inverse-on-surface p-space-md rounded-xl shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1.5">
+<div class="w-3 h-3 rounded-full bg-error"></div>
+<div class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></div>
+<div class="w-3 h-3 rounded-full bg-primary-fixed"></div>
+</div>
+<span class="font-label-receipt text-label-receipt text-secondary-fixed uppercase font-semibold">
+          beam@tj-pos59.local (erl -sname frontera -setcookie otp_tj)
+        </span>
+</div>
+<button class="text-xs text-secondary-fixed hover:text-surface-bright flex items-center gap-1 font-label-receipt" id="clear-console" type="button">
+<span class="material-symbols-outlined text-[14px]">delete</span>
+        Limpiar Buffer
+      </button>
+</div>
+<!-- Buffer de Registros Sintácticos -->
+<div class="w-full h-56 overflow-y-auto font-label-receipt text-label-receipt flex flex-col gap-1 p-space-xs bg-black/40 rounded-lg" id="beam-console">
+<div class="text-secondary-fixed">
+        =PROGRESS REPORT==== 26-May-2024::10:14:02.109212 ===<br/>
+            application: frontera_pos<br/>
+            started_at: beam@tj-pos59.local<br/>
+            supervisors: [pos_root_sup, cajas_sup]<br/>
+            ready_workers: 4 cash_registers, 1 exchange_rate, 1 mnesia_store
+      </div>
+<div class="text-primary-fixed">
+        [OTP 26] Sistema en ejecución estable en Tijuana Centro. Monitor SASL listo para captura de caídas controladas.
+      </div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    let globalRestarts = 0;
+    let auditoriumMode = false;
+
+    const pids = {
+      1: { current: 142, restarts: 0 },
+      2: { current: 145, restarts: 0 },
+      3: { current: 148, restarts: 0 },
+      4: { current: 151, restarts: 0 }
+    };
+
+    const consoleBuffer = document.getElementById('beam-console');
+    const globalCountElem = document.getElementById('global-restart-count');
+    const auditoriumBtn = document.getElementById('toggle-auditorium');
+    const canvas = document.getElementById('otp-tree-canvas');
+
+    function logToBeam(text, type = 'info') {
+      const now = new Date().toISOString().replace('T', '::').replace('Z', '');
+      const line = document.createElement('div');
+      
+      if (type === 'crash') {
+        line.className = 'text-error-container';
+        line.innerHTML = `<strong>=CRASH REPORT==== ${now} ===</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;${text}`;
+      } else if (type === 'supervisor') {
+        line.className = 'text-tertiary-fixed';
+        line.innerHTML = `<strong>=SUPERVISOR REPORT==== ${now} ===</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;${text}`;
+      } else if (type === 'recovery') {
+        line.className = 'text-primary-fixed';
+        line.innerHTML = `[BEAM OK] ${text}`;
+      } else {
+        line.className = 'text-secondary-fixed';
+        line.innerHTML = `[LOG] ${text}`;
+      }
+
+      consoleBuffer.appendChild(line);
+      consoleBuffer.scrollTop = consoleBuffer.scrollHeight;
+    }
+
+    function triggerFailure(boxId, reason, errorDesc) {
+      const node = document.getElementById(`tree-node-1`.replace('1', boxId));
+      const status = document.getElementById(`node-status-1`.replace('1', boxId));
+      const pidElem = document.getElementById(`node-pid-1`.replace('1', boxId));
+      const badgeElem = document.getElementById(`badge-pid-1`.replace('1', boxId));
+      const restartsElem = document.getElementById(`node-restarts-1`.replace('1', boxId));
+
+      const oldPid = `<0.${pids[boxId].current}.0>`;
+
+      // Estado 1: Falla Inmediata
+      node.classList.remove('bg-surface-container-low');
+      node.classList.add('bg-error', 'text-on-error');
+      
+      status.className = 'flex items-center gap-1 text-on-error font-semibold';
+      status.innerHTML = `<span class="material-symbols-outlined text-[14px]">dangerous</span><span>Falla</span>`;
+
+      logToBeam(`caja_0${boxId}_worker (${oldPid}) crashed with reason: ${errorDesc}`, 'crash');
+      logToBeam(`cajas_sup (&lt;0.138.0&gt;) caught child death: ${reason}. Executing restart policy 'one_for_one'...`, 'supervisor');
+
+      // Estado 2: Recuperación OTP tras 180ms
+      setTimeout(() => {
+        pids[boxId].current += 4;
+        pids[boxId].restarts += 1;
+        globalRestarts += 1;
+
+        const newPid = `<0.${pids[boxId].current}.0>`;
+
+        pidElem.textContent = newPid;
+        badgeElem.textContent = newPid;
+        restartsElem.textContent = pids[boxId].restarts;
+        globalCountElem.textContent = globalRestarts;
+
+        node.classList.remove('bg-error', 'text-on-error');
+        node.classList.add('bg-primary-container', 'text-on-primary-container');
+
+        status.className = 'flex items-center gap-1 text-on-primary-container font-semibold';
+        status.innerHTML = `<span class="material-symbols-outlined text-[14px]">autorenew</span><span>Recuperado</span>`;
+
+        logToBeam(`Worker spawned successfully: ${newPid}. Estado local reconciliado con Mnesia table 'pos_caja_state'.`, 'recovery');
+
+        // Retorno a Operando Nominal tras 600ms
+        setTimeout(() => {
+          node.classList.remove('bg-primary-container', 'text-on-primary-container');
+          node.classList.add('bg-surface-container-low');
+          status.className = 'flex items-center gap-1 text-primary font-semibold';
+          status.innerHTML = `<span class="material-symbols-outlined text-[14px]">check_circle</span><span>Operando</span>`;
+        }, 600);
+
+      }, 220);
+    }
+
+    // Botones de Inyección de Falla
+    document.querySelectorAll('[data-action]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const action = btn.getAttribute('data-action');
+        const box = btn.getAttribute('data-box');
+
+        if (action === 'kill') {
+          triggerFailure(box, 'killed', 'exit(Pid, kill) by remote demo signal');
+        } else if (action === 'cpu-lock') {
+          logToBeam(`[INYECCIÓN] Provocando bucle infinito en gen_server:handle_call de Caja 01...`, 'info');
+          setTimeout(() => {
+            triggerFailure(box, 'timeout_deadlock', '{gen_server_call_timeout, {wait_time, infinity}}');
+          }, 350);
+        } else if (action === 'net-drop') {
+          logToBeam(`[INYECCIÓN] Cerrando descriptor de socket TCP hacia pasarela fiscal...`, 'info');
+          triggerFailure(box, 'tcp_closed', '{network_error, econnreset}');
+        } else if (action === 'pinpad-timeout') {
+          logToBeam(`[INYECCIÓN] Pinpad Serial Port /dev/ttyUSB0 sin respuesta tras 5000ms...`, 'info');
+          triggerFailure(box, 'peripheral_timeout', '{hardware_error, pos_pinpad_not_responding}');
+        } else if (action === 'mailbox-flood') {
+          logToBeam(`[INYECCIÓN] Desbordando mailbox del actor con 10,000 mensajes synch simulados...`, 'info');
+          triggerFailure(box, 'out_of_memory_mailbox', '{process_limit, mailbox_overrun_10k}');
+        } else if (action === 'badarith') {
+          triggerFailure(box, 'badarith', '{badarith, [{pos_fiscal_calc, divide_total, 2}, {gen_server, try_dispatch, 4}]}');
+        }
+      });
+    });
+
+    // Limpiar Consola
+    document.getElementById('clear-console').addEventListener('click', () => {
+      consoleBuffer.innerHTML = '<div class="text-secondary-fixed">[BEAM BUFFER RESET] Consola reiniciada por el operador.</div>';
+    });
+
+    // Reinicio Completo
+    document.getElementById('btn-reboot-all').addEventListener('click', () => {
+      for (let i = 1; i <= 4; i++) {
+        pids[i].restarts = 0;
+        document.getElementById(`node-restarts-${i}`).textContent = '0';
+      }
+      globalRestarts = 0;
+      globalCountElem.textContent = '0';
+      logToBeam(`Comando supervisor:terminate_child ejecutado en lote. Árbol restablecido a estado de arranque.`, 'info');
+    });
+
+    // Toggle Modo Auditorio (Alto contraste y tipografía nítida para proyector)
+    auditoriumBtn.addEventListener('click', () => {
+      auditoriumMode = !auditoriumMode;
+      if (auditoriumMode) {
+        auditoriumBtn.textContent = 'Auditorio ACTIVO';
+        auditoriumBtn.classList.remove('bg-surface-container-highest', 'text-on-surface');
+        auditoriumBtn.classList.add('bg-primary', 'text-on-primary');
+        canvas.classList.add('bg-surface-container-high', 'scale-[1.01]');
+        logToBeam(`[AUDITORIO] Contraste de presentación activado para proyector de sala técnica.`, 'info');
+      } else {
+        auditoriumBtn.textContent = 'Normal';
+        auditoriumBtn.classList.remove('bg-primary', 'text-on-primary');
+        auditoriumBtn.classList.add('bg-surface-container-highest', 'text-on-surface');
+        canvas.classList.remove('bg-surface-container-high', 'scale-[1.01]');
+        logToBeam(`[AUDITORIO] Retornando a perfil de pantalla regular.`, 'info');
+      }
+    });
+
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest py-space-md px-gutter-desktop shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full flex flex-col md:flex-row items-center justify-between gap-space-xs text-secondary"><div class="flex items-center gap-space-sm"><span class="font-label-receipt text-label-receipt">Frontera POS v2.4.1 (Erlang/OTP 26)</span><span class="font-label-receipt text-label-receipt">·</span><span class="font-label-receipt text-label-receipt">Sucursal: Tijuana Centro #59</span></div><div class="font-label-receipt text-label-receipt text-on-surface-variant font-medium">MODO FISCAL ACTIVO · OPERACIÓN LOCAL RESILIENTE</div></div></footer></body></html>
